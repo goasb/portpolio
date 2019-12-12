@@ -1,0 +1,64 @@
+/* dell.css */
+/* @mixin myname(){}   // @include myname(); @function myFn(){}  // myFn(); */
+#wrap { width: 100%; height: auto; background-color: #ccc; }
+
+#headBox { position: fixed; width: 100%; height: 100px; }
+
+#headBox h1 { position: absolute; left: 5%; width: 100px; height: 100%; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-size: 50%; background-image: url("../../img/logo_white.png"); }
+
+#headBox h1 a { display: block; width: 100%; height: 100%; }
+
+#headBox .gnb { position: absolute; right: 5%; width: 500px; height: 100%; }
+
+#headBox .gnb ul { width: 100%; height: 100%; }
+
+#headBox .gnb ul li { float: left; margin-left: 30px; width: 100px; height: 100%; font-weight: bold; text-align: center; line-height: 100px; }
+
+#headBox .gnb ul li:nth-child(1) { margin-left: 0; }
+
+#headBox .gnb ul li a { display: block; width: 100%; height: 100%; font-size: 1.2rem; color: #fff; }
+
+#banner { width: 100%; height: 940px; background-color: #999; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-size: cover; background-image: url("../../img/gradient.svg"); }
+
+#banner .textBox { position: absolute; margin: auto; right: 0; left: 0; top: 0; bottom: 0; width: 800px; height: 500px; }
+
+#banner .textBox h2 { font-size: 5rem; color: #fff; text-align: center; line-height: 1.1; }
+
+#banner .textBox p { font-weight: bold; text-align: center; color: #fff; padding-top: 50px; line-height: 1.7; }
+
+#banner .textBox ul { position: absolute; margin: auto; left: 0; right: 0; width: 320px; height: auto; }
+
+#banner .textBox ul li { float: left; margin-right: 40px; width: 50px; height: 50px; margin-top: 60px; }
+
+#banner .textBox ul li:nth-child(1) { background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-size: 70%; background-image: url("../../img/facebook.png"); }
+
+#banner .textBox ul li:nth-child(2) { background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-size: 70%; background-image: url("../../img/instar.png"); }
+
+#banner .textBox ul li:nth-child(3) { background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-size: 70%; background-image: url("../../img/naver.png"); }
+
+#banner .textBox ul li:nth-child(4) { margin-right: 0; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-size: 70%; background-image: url("../../img/google.png"); }
+
+#banner .textBox ul li a { display: block; width: 100%; height: 100%; }
+
+#banner .textBox ul li span { display: block; width: 0; height: 0; overflow: hidden; }
+
+@keyframes mousewheel { 0% { opacity: 1;
+    top: 0; }
+  100% { opacity: 0;
+    top: 50%; } }
+
+#banner .mouse { position: absolute; bottom: 4%; left: 0; right: 0; margin: auto; width: 30px; height: 50px; border: 2px solid #fff; border-radius: 15px; box-sizing: border-box; }
+
+#banner .mouse .wheel { position: absolute; width: 4px; height: 10px; left: 50%; transform: translateX(-50%); text-indent: -2000px; background-color: #fff; border-radius: 10px; animation: mousewheel 1s linear infinite; }
+
+#about { width: 100%; height: 500px; background-color: #777; }
+
+#about .leftBox { float: left; width: 50%; height: 500px; background-color: #faf; }
+
+#about .rightBox { float: right; width: 50%; height: 500px; background-color: #444; }
+
+#skill { width: 100%; height: 500px; background-color: #999; }
+
+#product_01 { width: 100%; height: 500px; background-color: #888; }
+
+#footBox { width: 100%; height: 200px; background-color: #af2; }
