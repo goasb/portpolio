@@ -1,6 +1,6 @@
 /* dell.css */
 /* @mixin myname(){}   // @include myname(); @function myFn(){}  // myFn(); */
-#wrap { width: 100%; height: auto; background-color: #ccc; }
+#wrap { width: 100%; height: auto; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-size: cover; background-image: url("../../img/gradient.svg"); }
 
 #headBox { position: fixed; width: 100%; height: 100px; }
 
@@ -18,7 +18,7 @@
 
 #headBox .gnb ul li a { display: block; width: 100%; height: 100%; font-size: 1.2rem; color: #fff; }
 
-#banner { width: 100%; height: 940px; background-color: #999; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-size: cover; background-image: url("../../img/gradient.svg"); }
+#banner { width: 100%; height: 940px; }
 
 #banner .textBox { position: absolute; margin: auto; right: 0; left: 0; top: 0; bottom: 0; width: 800px; height: 500px; }
 
@@ -51,13 +51,53 @@
 
 #banner .mouse .wheel { position: absolute; width: 4px; height: 10px; left: 50%; transform: translateX(-50%); text-indent: -2000px; background-color: #fff; border-radius: 10px; animation: mousewheel 1s linear infinite; }
 
-#about { width: 100%; height: 500px; background-color: #777; }
+#about { width: 1200px; height: 800px; margin: auto; margin-top: 10rem; background-color: #fff; color: #222; line-height: 2; }
 
-#about .leftBox { float: left; width: 50%; height: 500px; background-color: #faf; }
+#about h2 { font-size: 2rem; margin-bottom: 2rem; }
 
-#about .rightBox { float: right; width: 50%; height: 500px; background-color: #444; }
+#about p { font-size: 1rem; font-weight: 500; }
 
-#skill { width: 100%; height: 500px; background-color: #999; }
+#about .leftBox { float: left; width: 800px; height: 500px; }
+
+#about .leftBox .aboutme { float: left; width: 400px; height: 500px; }
+
+#about .img { float: left; width: 400px; height: 500px; background-color: #888; }
+
+#skill { width: 100%; height: 940px; margin-top: 10rem; }
+
+.abtitle { width: 100%; height: 200px; }
+
+.abtitle h2 { margin: auto; font-size: 4rem; line-height: 100px; text-align: center; width: 300px; height: 100px; color: #fff; }
+
+.abtitle p { font-size: 1rem; color: #fff; text-align: center; }
+
+.abProgram { width: 50%; height: auto; min-height: 800px; margin: auto; background-color: #fff; }
+
+.bar { width: 100%; height: auto; margin-bottom: 10px; }
+
+.bar dl { float: left; width: 90%; height: 100%; transform: translateX(15%); }
+
+.bar dl dt { float: left; width: 20%; height: 50px; line-height: 50px; margin-bottom: 5px; }
+
+.bar dl dd { float: left; height: 20px; margin-bottom: 10px; }
+
+.bar dl dd.narr { width: 50%; font-size: 0.8rem; color: #333; }
+
+.bar dl dd.gage { width: 60%; height: 30px; }
+
+.bar dl dd.gage span { display: block; float: left; width: 80%; height: 100%; border: 1px solid #000; box-sizing: border-box; }
+
+.bar dl dd.gage i { display: block; height: 100%; background-color: #0af; transition: width 500ms ease; }
+
+.bar dl dd.gage em { display: block; float: right; width: 20%; height: 100%; }
+
+.abProgram i { width: 0; }
+
+.abProgram:hover .ps i { width: 90%; }
+
+.abProgram:hover .ai i { width: 80%; }
+
+.abProgram:hover .id i { width: 70%; }
 
 #product_01 { width: 100%; height: 500px; background-color: #888; }
 
