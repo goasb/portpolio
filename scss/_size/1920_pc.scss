@@ -1,13 +1,13 @@
-#wrap {width: 100%; height:auto; @include url; background-size:cover; background-image: url("../../img/gradient.svg");}
-#headBox {position: fixed; width:100%; height: 100px;
+#wrap {width: 100%; height:auto; @include url; background-size:cover; background-image: url("../img/wrap.svg");}
+#headBox {position: fixed; z-index:10; width:100%; height: 100px; background-color:rgba(0,0,0,0.2); 
 h1 {position: absolute; left:5%; width: 100px; height:100%;
     @include url; 
     background-size:50%; 
-    background-image: url("../../img/logo_white.png");
+    background-image: url("../img/logo_white.png");
     
 a {display: block; width: 100%; height: 100%;}}
 
-.gnb {position: absolute; right:5%; width: 500px; height: 100%;
+.gnb {position: absolute; right:5%; width: 700px; height: 100%;
  ul {width: 100%; height: 100%; 
   li {float:left; margin-left:30px; width: 100px; height: 100%; 
       font-weight:bold; text-align:center; line-height:100px; 
@@ -18,17 +18,18 @@ a {display: block; width: 100%; height: 100%;}}
  } // .gnb
 } // #headBox
 
-#banner {width: 100%; height:940px;
+#banner {width: 100%; height:940px; background-size:cover; background-image: url("../img/gradient.svg");
+  
        
  .textBox {position: absolute; @include margin; width: 800px; height: 500px; 
   h2 {font-size:5rem; color:$white; text-align: center; line-height:1.1;}
   p {font-weight:bold; text-align: center; color:#fff; padding-top:50px; line-height:1.7;}
   ul {position: absolute; margin:auto; left:0; right:0; width: 320px; height: auto;
    li {float:left; margin-right:40px; width: 50px; height: 50px; margin-top:60px;
-   &:nth-child(1) {@include url; background-size:70%; background-image:url("../../img/facebook.png");}
-   &:nth-child(2) {@include url; background-size:70%; background-image:url("../../img/instar.png");}
-   &:nth-child(3) {@include url; background-size:70%; background-image:url("../../img/naver.png");}
-   &:nth-child(4) {margin-right:0; @include url; background-size:70%; background-image:url("../../img/google.png");}
+   &:nth-child(1) {@include url; background-size:70%; background-image:url("../img/facebook.png");}
+   &:nth-child(2) {@include url; background-size:70%; background-image:url("../img/instar.png");}
+   &:nth-child(3) {@include url; background-size:70%; background-image:url("../img/naver.png");}
+   &:nth-child(4) {margin-right:0; @include url; background-size:70%; background-image:url("../img/google.png");}
     a {display: block; width: 100%; height: 100%;}
     span {@include hidden;}
    } // li
@@ -57,20 +58,20 @@ a {display: block; width: 100%; height: 100%;}}
 } // #about
     
 
-#skill {width: 100%; height: 940px; margin-top:10rem;}
+#skill {width: 100%; height: auto; margin-top:10rem;}
 .abtitle {width: 100%; height: 200px; 
 h2 {margin:auto; font-size:4rem; line-height:100px; text-align: center; width: 300px; height: 100px; color:#fff;}
  p {font-size: 1rem; color:#fff; text-align: center;}
 }
-.abProgram{width: 50%; height:auto; min-height:800px; margin: auto; background-color: #fff;}
-.bar{width: 100%; height: auto; margin-bottom: 10px;
-  dl{float:left; width: 90%; height: 100%; transform: translateX(15%);
-   dt{float:left; width:20%; height: 50px; line-height:50px; margin-bottom: 5px; }
+.abProgram{width: 50%; height:auto; min-height:1050px; margin: auto; background-color:rgba(255,255,255,0.2);}
+.bar{width: 100%; height: auto; margin-bottom: 10px; color:#fff; padding:50px 0;
+  dl{float:left; width: 90%; height: 100%; transform: translateX(15%); margin-bottom:20px;
+   dt{float:left; width:15%; height: 50px; line-height:50px; margin-bottom: 5px; }
    dd{float:left; height: 20px; margin-bottom: 10px; 
-     &.narr{width:50%; font-size: 0.8rem; color:#333;}
-     &.gage{width:60%; height: 30px; 
-       span{display: block; float: left; width: 80%; height: 100%; border:1px solid #000; box-sizing: border-box;}
-       i{display: block; height: 100%; background-color: #0af;
+     &.narr{width:50%; font-size: 0.8rem; color:#fff;}
+     &.gage{width:80%; height: 30px; 
+       span{display: block; float: left; width: 75%; height: 100%; }
+       i{display: block; height: 100%; background-color:rgb(241, 124, 46);
                     transition:width 500ms ease;}
          em{display: block; float:right; width: 20%; height: 100%; }
    } // &.gage
@@ -79,11 +80,84 @@ h2 {margin:auto; font-size:4rem; line-height:100px; text-align: center; width: 3
 } // .bar
 .abProgram  i{width: 0;}
 .abProgram:hover .ps  i{width: 90%;}
-.abProgram:hover .ai i{width: 80%;}
+.abProgram:hover .ai i{width: 90%;}
 .abProgram:hover .id  i{width: 70%;}
+.abProgram:hover .html  i{width: 80%;}
+.abProgram:hover .css  i{width: 80%;}
+.abProgram:hover .scss  i{width: 80%;}
+.abProgram:hover .js  i{width: 60%;}
+.abProgram:hover .git  i{width: 70%;}
+.abProgram:hover .md  i{width: 70%;}
 
 
 
 
-#product_01 {width: 100%; height: 500px; background-color: #888;}
-#footBox {width: 100%; height: 200px; background-color: #af2;}
+#product_01 {width: 100%; height:auto; margin-top:10rem; 
+  p {display: block; width:100%; height: 25px; color:#fff;}
+ .pfBox {position: relative; width:1300px; height:100%; margin:auto;
+ 
+}
+ .pf_dell {float:left; position: relative; width: 500px; height: 620px;  background-color:rgba(255,255,255,0.2);
+  .img_dell {position: absolute; right:0; left:0; top:62px; margin:auto; width: 360px; height: 230px; background-color: #333; overflow: hidden;
+   img {position: absolute; top:0; left:0; width: 370px; height:auto; transition:top 2s ease;}
+  } // .img_dell
+  &:hover img {top:-635px;}
+
+  .moniter {position: absolute; right:0; left:0; top:50px; margin:auto; width: 400px; height: 300px; 
+    @include url;
+    background-image: url("../img/mac.png");}
+
+  .product_text {position: absolute; bottom:0;  width: 100%; height:auto; 
+    .site {float:left; width: 120px; height:auto;
+      p {display: block; margin-left:10px; width:100%; height: 20px; font-weight:bold; color:#fff;}
+    } // .site
+
+    .site_name {float:right; width: 380px; height:auto;
+      p {display: block; margin-left:10px; margin-bottom:22px; width:100%; height:20px; font-weight:bold;}
+      a {display: block; margin-left:10px; margin-bottom:20px; width: 100%; height:20px; font-weight:bold; color:#fff;}
+      span {font-weight:bold;}
+   } // .site_name
+  } // .product_text
+ } // .pf_dell
+
+ .pf_tesla {position: relative; float:right; width: 500px; height: 620px;  background-color:rgba(255,255,255,0.2);
+  .img_tesla {position: absolute; right:0; left:0; top:62px; margin:auto; width: 360px; height: 230px; background-color: #333; overflow: hidden;
+   img {position: absolute; top:0; left:0; width: 370px; height:auto; transition:top 2s ease;}
+  } // .img_dell
+  &:hover img {top:-635px;}
+
+  .moniter {position: absolute; right:0; left:0; top:50px; margin:auto; width: 400px; height: 300px; 
+    @include url;
+    background-image: url("../img/mac.png");}
+  .product_text {position: absolute; bottom:0;  width: 100%; height:auto; 
+    .site {float:left; width: 120px; height:auto;
+      p {display: block; margin-left:10px; width:100%; height: 20px; font-weight:bold;}
+    } // .site
+    .site_name {float:right; width: 380px; height:auto;
+      p {display: block; margin-left:10px; margin-bottom:22px; width:100%; height:20px; font-weight:bold;}
+      a {display: block; margin-left:10px; margin-bottom:20px; width: 100%; height:20px; font-weight:bold;}
+      span {font-weight:bold;}
+   } // .site_name
+  } // .product_text 깃 웹사이트 사이트맵 pdf 
+ } // .pf_tesla
+} // #product
+
+
+#footBox {width: 100%; height:300px; margin-top:15rem;
+  a {display: block; width: 100%; height: 100%; font-weight:bold; color:#fff;}
+.loadBox {width:520px; height:auto; margin:auto;  color:#fff; text-align: center; line-height:50px;
+  div {position: relative; width: 100%; height: 100%;
+    &:before {content:" "; position: absolute; right:0; display: block; width: 1px; height: 20px; 
+      background-color: #fff; transform: translateY(75%);}
+    &:nth-child(4) {&:before {display: none;}}
+    } // .div
+ .git {float:left;  width: 120px; height: 50px;}
+ .web {float:left; width: 120px; height: 50px;}
+ .site_map {float:left; width: 120px; height: 50px;}
+ .pdf {float:left; margin-left:20px; width: 120px; height: 50px;}
+ } // .loadBox
+
+ .pf_info {width: 980px; height:auto; margin:auto;
+  p {font-weight:bold; text-align: center; line-height:1.6; margin-top:40px; color:#fff;}
+ }// pf.info
+} // #footBox
