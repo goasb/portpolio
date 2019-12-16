@@ -1,510 +1,190 @@
 /* dell.css */
-/* @mixin myname(){}   // @include myname();
-   @function myFn(){}  // myFn(); */
-#wrap {
-  width: 100%;
-  height: auto;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-size: contain;
-  background-size: cover;
-  background-image: url("../img/wrap.svg"); }
+/* @mixin myname(){}   // @include myname(); @function myFn(){}  // myFn(); */
+#wrap { width: 100%; height: auto; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-size: cover; background-image: url("../img/wrap.svg"); }
 
-#headBox {
-  position: fixed;
-  z-index: 10;
-  width: 100%;
-  height: 100px;
-  background-color: rgba(0, 0, 0, 0.2); }
-  #headBox h1 {
-    position: absolute;
-    left: 5%;
-    width: 100px;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: contain;
-    background-size: 50%;
-    background-image: url("../img/logo_white.png"); }
-    #headBox h1 a {
-      display: block;
-      width: 100%;
-      height: 100%; }
-  #headBox .gnb {
-    position: absolute;
-    right: 5%;
-    width: 700px;
-    height: 100%; }
-    #headBox .gnb ul {
-      width: 100%;
-      height: 100%; }
-      #headBox .gnb ul li {
-        float: left;
-        margin-left: 30px;
-        width: 100px;
-        height: 100%;
-        font-weight: bold;
-        text-align: center;
-        line-height: 100px; }
-        #headBox .gnb ul li:nth-child(1) {
-          margin-left: 0; }
-        #headBox .gnb ul li a {
-          display: block;
-          width: 100%;
-          height: 100%;
-          font-size: 1.2rem;
-          color: #fff; }
+#headBox { position: fixed; z-index: 10; width: 100%; height: 100px; background-color: rgba(0, 0, 0, 0.2); }
 
-#banner {
-  width: 100%;
-  height: 940px;
-  background-size: cover;
-  background-image: url("../img/gradient.svg"); }
-  #banner .textBox {
-    position: absolute;
-    margin: auto;
-    right: 0;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    width: 800px;
-    height: 500px; }
-    #banner .textBox h2 {
-      font-size: 5rem;
-      color: #fff;
-      text-align: center;
-      line-height: 1.1; }
-    #banner .textBox p {
-      font-weight: bold;
-      text-align: center;
-      color: #fff;
-      padding-top: 50px;
-      line-height: 1.7; }
-    #banner .textBox ul {
-      position: absolute;
-      margin: auto;
-      left: 0;
-      right: 0;
-      width: 320px;
-      height: auto; }
-      #banner .textBox ul li {
-        float: left;
-        margin-right: 40px;
-        width: 50px;
-        height: 50px;
-        margin-top: 60px; }
-        #banner .textBox ul li:nth-child(1) {
-          background-repeat: no-repeat;
-          background-position: 50% 50%;
-          background-size: contain;
-          background-size: 70%;
-          background-image: url("../img/facebook.png"); }
-        #banner .textBox ul li:nth-child(2) {
-          background-repeat: no-repeat;
-          background-position: 50% 50%;
-          background-size: contain;
-          background-size: 70%;
-          background-image: url("../img/instar.png"); }
-        #banner .textBox ul li:nth-child(3) {
-          background-repeat: no-repeat;
-          background-position: 50% 50%;
-          background-size: contain;
-          background-size: 70%;
-          background-image: url("../img/naver.png"); }
-        #banner .textBox ul li:nth-child(4) {
-          margin-right: 0;
-          background-repeat: no-repeat;
-          background-position: 50% 50%;
-          background-size: contain;
-          background-size: 70%;
-          background-image: url("../img/google.png"); }
-        #banner .textBox ul li a {
-          display: block;
-          width: 100%;
-          height: 100%; }
-        #banner .textBox ul li span {
-          display: block;
-          width: 0;
-          height: 0;
-          overflow: hidden; }
+#headBox h1 { position: absolute; left: 5%; width: 100px; height: 100%; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-size: 50%; background-image: url("../img/logo_white.png"); }
 
-@keyframes mousewheel {
-  0% {
-    opacity: 1;
+#headBox h1 a { display: block; width: 100%; height: 100%; }
+
+#headBox .gnb { position: absolute; right: 5%; width: 700px; height: 100%; }
+
+#headBox .gnb ul { width: 100%; height: 100%; }
+
+#headBox .gnb ul li { float: left; margin-left: 30px; width: 100px; height: 100%; font-weight: bold; text-align: center; line-height: 100px; }
+
+#headBox .gnb ul li:nth-child(1) { margin-left: 0; }
+
+#headBox .gnb ul li a { display: block; width: 100%; height: 100%; font-size: 1.2rem; color: #fff; }
+
+#banner { width: 100%; height: 940px; background-size: cover; background-image: url("../img/gradient.svg"); }
+
+#banner .textBox { position: absolute; margin: auto; right: 0; left: 0; top: 0; bottom: 0; width: 800px; height: 500px; }
+
+#banner .textBox h2 { font-size: 5rem; color: #fff; text-align: center; line-height: 1.1; }
+
+#banner .textBox p { font-weight: bold; text-align: center; color: #fff; padding-top: 50px; line-height: 1.7; }
+
+#banner .textBox ul { position: absolute; margin: auto; left: 0; right: 0; width: 320px; height: auto; }
+
+#banner .textBox ul li { float: left; margin-right: 40px; width: 50px; height: 50px; margin-top: 60px; }
+
+#banner .textBox ul li:nth-child(1) { background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-size: 70%; background-image: url("../img/facebook.png"); }
+
+#banner .textBox ul li:nth-child(2) { background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-size: 70%; background-image: url("../img/instar.png"); }
+
+#banner .textBox ul li:nth-child(3) { background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-size: 70%; background-image: url("../img/naver.png"); }
+
+#banner .textBox ul li:nth-child(4) { margin-right: 0; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-size: 70%; background-image: url("../img/google.png"); }
+
+#banner .textBox ul li a { display: block; width: 100%; height: 100%; }
+
+#banner .textBox ul li span { display: block; width: 0; height: 0; overflow: hidden; }
+
+@keyframes mousewheel { 0% { opacity: 1;
     top: 0; }
-  100% {
-    opacity: 0;
+  100% { opacity: 0;
     top: 50%; } }
-  #banner .mouse {
-    position: absolute;
-    bottom: 4%;
-    left: 0;
-    right: 0;
-    margin: auto;
-    width: 30px;
-    height: 50px;
-    border: 2px solid #fff;
-    border-radius: 15px;
-    box-sizing: border-box; }
-    #banner .mouse .wheel {
-      position: absolute;
-      width: 4px;
-      height: 10px;
-      left: 50%;
-      transform: translateX(-50%);
-      text-indent: -2000px;
-      background-color: #fff;
-      border-radius: 10px;
-      animation: mousewheel 1s linear infinite; }
 
-#about {
-  width: 1200px;
-  height: 800px;
-  margin: auto;
-  margin-top: 10rem;
-  background-color: #fff;
-  color: #222;
-  line-height: 2; }
-  #about h2 {
-    font-size: 2rem;
-    margin-bottom: 2rem; }
-  #about p {
-    font-size: 1rem;
-    font-weight: 500; }
-  #about .leftBox {
-    float: left;
-    width: 800px;
-    height: 500px; }
-    #about .leftBox .aboutme {
-      float: left;
-      width: 400px;
-      height: 500px; }
-  #about .img {
-    float: left;
-    width: 400px;
-    height: 500px;
-    background-color: #888; }
+#banner .mouse { position: absolute; bottom: 4%; left: 0; right: 0; margin: auto; width: 30px; height: 50px; border: 2px solid #fff; border-radius: 15px; box-sizing: border-box; }
 
-#skill {
-  width: 100%;
-  height: auto;
-  margin-top: 10rem; }
+#banner .mouse .wheel { position: absolute; width: 4px; height: 10px; left: 50%; transform: translateX(-50%); text-indent: -2000px; background-color: #fff; border-radius: 10px; animation: mousewheel 1s linear infinite; }
 
-.abtitle {
-  width: 100%;
-  height: 200px; }
-  .abtitle h2 {
-    margin: auto;
-    font-size: 4rem;
-    line-height: 100px;
-    text-align: center;
-    width: 300px;
-    height: 100px;
-    color: #fff; }
-  .abtitle p {
-    font-size: 1rem;
-    color: #fff;
-    text-align: center; }
+#about { width: 1400px; height: 800px; margin: auto; margin-top: 20rem; color: #fff; line-height: 2; }
 
-.abProgram {
-  width: 50%;
-  height: auto;
-  min-height: 1050px;
-  margin: auto;
-  background-color: rgba(255, 255, 255, 0.2); }
+#about h2 { font-size: 2rem; margin-bottom: 2rem; }
 
-.bar {
-  width: 100%;
-  height: auto;
-  margin-bottom: 10px;
-  color: #fff;
-  padding: 50px 0; }
-  .bar dl {
-    float: left;
-    width: 90%;
-    height: 100%;
-    transform: translateX(15%);
-    margin-bottom: 20px; }
-    .bar dl dt {
-      float: left;
-      width: 15%;
-      height: 50px;
-      line-height: 50px;
-      margin-bottom: 5px; }
-    .bar dl dd {
-      float: left;
-      height: 20px;
-      margin-bottom: 10px; }
-      .bar dl dd.narr {
-        width: 50%;
-        font-size: 0.8rem;
-        color: #fff; }
-      .bar dl dd.gage {
-        width: 80%;
-        height: 30px; }
-        .bar dl dd.gage span {
-          display: block;
-          float: left;
-          width: 75%;
-          height: 100%; }
-        .bar dl dd.gage i {
-          display: block;
-          height: 100%;
-          background-color: #f17c2e;
-          transition: width 500ms ease; }
-        .bar dl dd.gage em {
-          display: block;
-          float: right;
-          width: 20%;
-          height: 100%; }
+#about p { font-size: 1rem; font-weight: 500; }
 
-.abProgram i {
-  width: 0; }
+#about .leftBox { float: right; width: 900px; height: 500px; }
 
-.abProgram:hover .ps i {
-  width: 90%; }
+#about .leftBox .aboutme { float: left; width: 400px; height: 500px; }
 
-.abProgram:hover .ai i {
-  width: 90%; }
+#about .img { float: left; width: 300px; height: 380px; background-color: #fff; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-size: cover; background-position: 50% 20%; background-image: url("../img/chojaeyeong.png"); }
 
-.abProgram:hover .id i {
-  width: 70%; }
+#skill { width: 100%; height: auto; }
 
-.abProgram:hover .html i {
-  width: 80%; }
+.abtitle { width: 100%; height: 200px; }
 
-.abProgram:hover .css i {
-  width: 80%; }
+.abtitle h2 { margin: auto; font-size: 4rem; line-height: 100px; text-align: center; width: 300px; height: 100px; color: #fff; }
 
-.abProgram:hover .scss i {
-  width: 80%; }
+.abtitle p { font-size: 1rem; color: #fff; text-align: center; }
 
-.abProgram:hover .js i {
-  width: 60%; }
+.abProgram { width: 50%; height: auto; min-height: 1050px; margin: auto; background-color: rgba(255, 255, 255, 0.2); }
 
-.abProgram:hover .git i {
-  width: 70%; }
+.bar { width: 100%; height: auto; margin-bottom: 10px; color: #fff; padding: 50px 0; }
 
-.abProgram:hover .md i {
-  width: 70%; }
+.bar dl { float: left; width: 90%; height: 100%; transform: translateX(15%); margin-bottom: 20px; }
 
-#product_01 {
-  width: 100%;
-  height: auto;
-  margin-top: 10rem; }
-  #product_01 p {
-    display: block;
-    width: 100%;
-    height: 25px;
-    color: #fff; }
-  #product_01 .pfBox {
-    position: relative;
-    width: 1300px;
-    height: 100%;
-    margin: auto; }
-  #product_01 .pf_dell {
-    float: left;
-    position: relative;
-    width: 500px;
-    height: 620px;
-    background-color: rgba(255, 255, 255, 0.2); }
-    #product_01 .pf_dell .img_dell {
-      position: absolute;
-      right: 0;
-      left: 0;
-      top: 62px;
-      margin: auto;
-      width: 360px;
-      height: 230px;
-      background-color: #333;
-      overflow: hidden; }
-      #product_01 .pf_dell .img_dell img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 370px;
-        height: auto;
-        transition: top 2s ease; }
-    #product_01 .pf_dell:hover img {
-      top: -635px; }
-    #product_01 .pf_dell .moniter {
-      position: absolute;
-      right: 0;
-      left: 0;
-      top: 50px;
-      margin: auto;
-      width: 400px;
-      height: 300px;
-      background-repeat: no-repeat;
-      background-position: 50% 50%;
-      background-size: contain;
-      background-image: url("../img/mac.png"); }
-    #product_01 .pf_dell .product_text {
-      position: absolute;
-      bottom: 0;
-      width: 100%;
-      height: auto; }
-      #product_01 .pf_dell .product_text .site {
-        float: left;
-        width: 120px;
-        height: auto; }
-        #product_01 .pf_dell .product_text .site p {
-          display: block;
-          margin-left: 10px;
-          width: 100%;
-          height: 20px;
-          font-weight: bold;
-          color: #fff; }
-      #product_01 .pf_dell .product_text .site_name {
-        float: right;
-        width: 380px;
-        height: auto; }
-        #product_01 .pf_dell .product_text .site_name p {
-          display: block;
-          margin-left: 10px;
-          margin-bottom: 22px;
-          width: 100%;
-          height: 20px;
-          font-weight: bold; }
-        #product_01 .pf_dell .product_text .site_name a {
-          display: block;
-          margin-left: 10px;
-          margin-bottom: 20px;
-          width: 100%;
-          height: 20px;
-          font-weight: bold;
-          color: #fff; }
-        #product_01 .pf_dell .product_text .site_name span {
-          font-weight: bold; }
-  #product_01 .pf_tesla {
-    position: relative;
-    float: right;
-    width: 500px;
-    height: 620px;
-    background-color: rgba(255, 255, 255, 0.2); }
-    #product_01 .pf_tesla .img_tesla {
-      position: absolute;
-      right: 0;
-      left: 0;
-      top: 62px;
-      margin: auto;
-      width: 360px;
-      height: 230px;
-      background-color: #333;
-      overflow: hidden; }
-      #product_01 .pf_tesla .img_tesla img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 370px;
-        height: auto;
-        transition: top 2s ease; }
-    #product_01 .pf_tesla:hover img {
-      top: -635px; }
-    #product_01 .pf_tesla .moniter {
-      position: absolute;
-      right: 0;
-      left: 0;
-      top: 50px;
-      margin: auto;
-      width: 400px;
-      height: 300px;
-      background-repeat: no-repeat;
-      background-position: 50% 50%;
-      background-size: contain;
-      background-image: url("../img/mac.png"); }
-    #product_01 .pf_tesla .product_text {
-      position: absolute;
-      bottom: 0;
-      width: 100%;
-      height: auto; }
-      #product_01 .pf_tesla .product_text .site {
-        float: left;
-        width: 120px;
-        height: auto; }
-        #product_01 .pf_tesla .product_text .site p {
-          display: block;
-          margin-left: 10px;
-          width: 100%;
-          height: 20px;
-          font-weight: bold; }
-      #product_01 .pf_tesla .product_text .site_name {
-        float: right;
-        width: 380px;
-        height: auto; }
-        #product_01 .pf_tesla .product_text .site_name p {
-          display: block;
-          margin-left: 10px;
-          margin-bottom: 22px;
-          width: 100%;
-          height: 20px;
-          font-weight: bold; }
-        #product_01 .pf_tesla .product_text .site_name a {
-          display: block;
-          margin-left: 10px;
-          margin-bottom: 20px;
-          width: 100%;
-          height: 20px;
-          font-weight: bold; }
-        #product_01 .pf_tesla .product_text .site_name span {
-          font-weight: bold; }
+.bar dl dt { float: left; font-weight: bold; width: 15%; height: 50px; line-height: 50px; margin-bottom: 5px; }
 
-#footBox {
-  width: 100%;
-  height: 300px;
-  margin-top: 15rem; }
-  #footBox a {
-    display: block;
-    width: 100%;
-    height: 100%;
-    font-weight: bold;
-    color: #fff; }
-  #footBox .loadBox {
-    width: 520px;
-    height: auto;
-    margin: auto;
-    color: #fff;
-    text-align: center;
-    line-height: 50px; }
-    #footBox .loadBox div {
-      position: relative;
-      width: 100%;
-      height: 100%; }
-      #footBox .loadBox div:before {
-        content: " ";
-        position: absolute;
-        right: 0;
-        display: block;
-        width: 1px;
-        height: 20px;
-        background-color: #fff;
-        transform: translateY(75%); }
-      #footBox .loadBox div:nth-child(4):before {
-        display: none; }
-    #footBox .loadBox .git {
-      float: left;
-      width: 120px;
-      height: 50px; }
-    #footBox .loadBox .web {
-      float: left;
-      width: 120px;
-      height: 50px; }
-    #footBox .loadBox .site_map {
-      float: left;
-      width: 120px;
-      height: 50px; }
-    #footBox .loadBox .pdf {
-      float: left;
-      margin-left: 20px;
-      width: 120px;
-      height: 50px; }
-  #footBox .pf_info {
-    width: 980px;
-    height: auto;
-    margin: auto; }
-    #footBox .pf_info p {
-      font-weight: bold;
-      text-align: center;
-      line-height: 1.6;
-      margin-top: 40px;
-      color: #fff; }
+.bar dl dd { float: left; height: 20px; margin-bottom: 10px; }
+
+.bar dl dd.narr { width: 50%; font-size: 0.8rem; color: #fff; }
+
+.bar dl dd.gage { width: 80%; height: 30px; }
+
+.bar dl dd.gage span { display: block; float: left; width: 75%; height: 100%; }
+
+.bar dl dd.gage i { display: block; height: 100%; background-color: #f17c2e; transition: width 500ms ease; }
+
+.bar dl dd.gage em { display: block; float: right; width: 20%; height: 100%; }
+
+.abProgram i { width: 0; }
+
+.abProgram:hover .ps i { width: 90%; }
+
+.abProgram:hover .ai i { width: 90%; }
+
+.abProgram:hover .id i { width: 70%; }
+
+.abProgram:hover .html i { width: 80%; }
+
+.abProgram:hover .css i { width: 80%; }
+
+.abProgram:hover .scss i { width: 80%; }
+
+.abProgram:hover .js i { width: 60%; }
+
+.abProgram:hover .git i { width: 70%; }
+
+.abProgram:hover .md i { width: 70%; }
+
+#product_01 { width: 100%; height: auto; margin-top: 25rem; }
+
+#product_01 p { display: block; width: 100%; height: 25px; color: #fff; }
+
+#product_01 .pfBox { position: relative; width: 1300px; height: 100%; margin: auto; }
+
+#product_01 .pf_dell { float: left; position: relative; width: 500px; height: 620px; background-color: rgba(255, 255, 255, 0.2); }
+
+#product_01 .pf_dell .img_dell { position: absolute; right: 0; left: 0; top: 62px; margin: auto; width: 360px; height: 230px; background-color: #333; overflow: hidden; }
+
+#product_01 .pf_dell .img_dell img { position: absolute; top: 0; left: 0; width: 370px; height: auto; transition: top 2s ease; }
+
+#product_01 .pf_dell:hover img { top: -635px; }
+
+#product_01 .pf_dell .moniter { position: absolute; right: 0; left: 0; top: 50px; margin: auto; width: 400px; height: 300px; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-image: url("../img/mac.png"); }
+
+#product_01 .pf_dell .product_text { position: absolute; bottom: 0; width: 100%; height: auto; }
+
+#product_01 .pf_dell .product_text .site { float: left; width: 120px; height: auto; }
+
+#product_01 .pf_dell .product_text .site p { display: block; margin-left: 10px; width: 100%; height: 20px; font-weight: bold; color: #fff; }
+
+#product_01 .pf_dell .product_text .site_name { float: right; width: 380px; height: auto; }
+
+#product_01 .pf_dell .product_text .site_name p { display: block; margin-left: 10px; margin-bottom: 22px; width: 100%; height: 20px; font-weight: bold; }
+
+#product_01 .pf_dell .product_text .site_name a { display: block; margin-left: 10px; margin-bottom: 20px; width: 100%; height: 20px; font-weight: bold; color: #fff; }
+
+#product_01 .pf_dell .product_text .site_name span { font-weight: bold; }
+
+#product_01 .pf_tesla { position: relative; float: right; width: 500px; height: 620px; background-color: rgba(255, 255, 255, 0.2); }
+
+#product_01 .pf_tesla .img_tesla { position: absolute; right: 0; left: 0; top: 62px; margin: auto; width: 360px; height: 230px; background-color: #333; overflow: hidden; }
+
+#product_01 .pf_tesla .img_tesla img { position: absolute; top: 0; left: 0; width: 370px; height: auto; transition: top 2s ease; }
+
+#product_01 .pf_tesla:hover img { top: -635px; }
+
+#product_01 .pf_tesla .moniter { position: absolute; right: 0; left: 0; top: 50px; margin: auto; width: 400px; height: 300px; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-image: url("../img/mac.png"); }
+
+#product_01 .pf_tesla .product_text { position: absolute; bottom: 0; width: 100%; height: auto; }
+
+#product_01 .pf_tesla .product_text .site { float: left; width: 120px; height: auto; }
+
+#product_01 .pf_tesla .product_text .site p { display: block; margin-left: 10px; width: 100%; height: 20px; font-weight: bold; }
+
+#product_01 .pf_tesla .product_text .site_name { float: right; width: 380px; height: auto; }
+
+#product_01 .pf_tesla .product_text .site_name p { display: block; margin-left: 10px; margin-bottom: 22px; width: 100%; height: 20px; font-weight: bold; }
+
+#product_01 .pf_tesla .product_text .site_name a { display: block; margin-left: 10px; margin-bottom: 20px; width: 100%; height: 20px; font-weight: bold; }
+
+#product_01 .pf_tesla .product_text .site_name span { font-weight: bold; }
+
+#footBox { width: 100%; height: 300px; margin-top: 15rem; }
+
+#footBox a { display: block; width: 100%; height: 100%; font-weight: bold; color: #fff; }
+
+#footBox .loadBox { width: 520px; height: auto; margin: auto; color: #fff; text-align: center; line-height: 50px; }
+
+#footBox .loadBox div { position: relative; width: 100%; height: 100%; }
+
+#footBox .loadBox div:before { content: " "; position: absolute; right: 0; display: block; width: 1px; height: 20px; background-color: #fff; transform: translateY(75%); }
+
+#footBox .loadBox div:nth-child(4):before { display: none; }
+
+#footBox .loadBox .git { float: left; width: 120px; height: 50px; }
+
+#footBox .loadBox .web { float: left; width: 120px; height: 50px; }
+
+#footBox .loadBox .site_map { float: left; width: 120px; height: 50px; }
+
+#footBox .loadBox .pdf { float: left; margin-left: 20px; width: 120px; height: 50px; }
+
+#footBox .pf_info { width: 980px; height: auto; margin: auto; }
+
+#footBox .pf_info p { font-weight: bold; text-align: center; line-height: 1.6; margin-top: 40px; color: #fff; }
