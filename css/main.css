@@ -2,6 +2,8 @@
 /* @mixin myname(){}   // @include myname(); @function myFn(){}  // myFn(); */
 #wrap { width: 100%; height: auto; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-size: cover; background-image: url("../img/wrap.svg"); }
 
+.scroll { padding-top: 150px; }
+
 #headBox { position: fixed; z-index: 10; width: 100%; height: 100px; background-color: rgba(0, 0, 0, 0.2); }
 
 #headBox h1 { position: absolute; left: 5%; width: 100px; height: 100%; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-size: 50%; background-image: url("../img/logo_white.png"); }

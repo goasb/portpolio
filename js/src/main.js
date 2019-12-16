@@ -21,6 +21,9 @@
 
  let myStatus = true , n , useN = 0;
 
+
+
+
  const ScrollMagic = function(){
      htmlEl.animate({scrollTop:myScrollElTop[useN]},
         timed,'easeOutSine',function(){
@@ -44,8 +47,8 @@
  //  마우스 휠 ===================================
     gnbLink.on('click',function(e){
         e.preventDefault();
-        useN = $(this).parent('li').index();
-        ScrollMasic();
+        useN = $(this).parents('li').index();
+        ScrollMagic();
     });
 // ==============================================
 // 터치 사용시
