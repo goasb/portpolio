@@ -2,7 +2,7 @@
 /* @mixin myname(){}   // @include myname(); @function myFn(){}  // myFn(); */
 #wrap { width: 100%; height: auto; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-size: cover; background-image: url("../img/wrap.svg"); }
 
-.scroll { padding-top: 150px; }
+.scroll { padding-top: 200px; }
 
 #headBox { position: fixed; z-index: 10; width: 100%; height: 100px; background-color: rgba(0, 0, 0, 0.2); }
 
@@ -59,11 +59,15 @@
 
 #about p { font-size: 1rem; font-weight: 500; }
 
-#about .leftBox { float: right; width: 900px; height: 500px; }
+#about .profile { float: left; width: 1350px; height: auto; margin-top: 100px; transition: all 1s ease; opacity: 0; }
 
-#about .leftBox .aboutme { float: left; width: 400px; height: 500px; }
+#about .profile .img { float: left; margin-right: 300px; transform: translateX(50%); width: 250px; height: 320px; background-color: #fff; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-size: cover; background-position: 50% 20%; background-image: url("../img/chojaeyeong.png"); }
 
-#about .img { float: left; width: 300px; height: 380px; background-color: #fff; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-size: cover; background-position: 50% 20%; background-image: url("../img/chojaeyeong.png"); }
+#about .profile .aboutme { float: left; width: 400px; height: 500px; }
+
+#about .profile .career { float: left; width: 400px; height: 500px; }
+
+#about .profile.action { margin-top: 0; opacity: 1; }
 
 #skill { width: 100%; height: auto; }
 
@@ -73,19 +77,21 @@
 
 .abtitle p { font-size: 1rem; color: #fff; text-align: center; }
 
-.abProgram { width: 50%; height: auto; min-height: 1050px; margin: auto; background-color: rgba(255, 255, 255, 0.2); }
+.abBox { width: 1200px; height: 800px; margin: auto; }
+
+.abProgram { float: left; width: 600px; height: auto; margin: auto; min-height: 500px; background-color: rgba(255, 255, 255, 0.2); }
 
 .bar { width: 100%; height: auto; margin-bottom: 10px; color: #fff; padding: 50px 0; }
 
-.bar dl { float: left; width: 90%; height: 100%; transform: translateX(15%); margin-bottom: 20px; }
+.bar dl { float: left; width: 90%; height: 100%; transform: translateX(14%); margin-bottom: 20px; }
 
 .bar dl dt { float: left; font-weight: bold; width: 15%; height: 50px; line-height: 50px; margin-bottom: 5px; }
 
 .bar dl dd { float: left; height: 20px; margin-bottom: 10px; }
 
-.bar dl dd.narr { width: 50%; font-size: 0.8rem; color: #fff; }
+.bar dl dd.narr { width: 50%; font-size: 0.8rem; padding: 0 5%; color: #fff; }
 
-.bar dl dd.gage { width: 80%; height: 30px; }
+.bar dl dd.gage { width: 70%; height: 30px; padding: 0 5%; }
 
 .bar dl dd.gage span { display: block; float: left; width: 75%; height: 100%; }
 
@@ -93,27 +99,45 @@
 
 .bar dl dd.gage em { display: block; float: right; width: 20%; height: 100%; }
 
-.abProgram i { width: 0; }
+.abBox i { width: 0; }
 
-.abProgram:hover .ps i { width: 90%; }
+.abBox:hover .ps i { width: 90%; }
 
-.abProgram:hover .ai i { width: 90%; }
+.abBox:hover .ai i { width: 90%; }
 
-.abProgram:hover .id i { width: 70%; }
+.abBox:hover .id i { width: 70%; }
 
-.abProgram:hover .html i { width: 80%; }
+.abBox:hover .html i { width: 80%; }
 
-.abProgram:hover .css i { width: 80%; }
+.abProgram_02 { float: left; width: 600px; height: auto; min-height: 500px; background-color: rgba(255, 255, 255, 0.2); }
 
-.abProgram:hover .scss i { width: 80%; }
+.bar { width: 100%; height: auto; margin-bottom: 10px; color: #fff; padding: 50px 0; }
 
-.abProgram:hover .js i { width: 60%; }
+.bar dl { float: left; width: 90%; height: 100%; transform: translateX(14%); margin-bottom: 20px; }
 
-.abProgram:hover .git i { width: 70%; }
+.bar dl dt { float: left; font-weight: bold; width: 15%; height: 50px; line-height: 50px; margin-bottom: 5px; }
 
-.abProgram:hover .md i { width: 70%; }
+.bar dl dd { float: left; height: 20px; margin-bottom: 10px; }
 
-#product_01 { width: 100%; height: auto; margin-top: 25rem; }
+.bar dl dd.narr { width: 50%; font-size: 0.8rem; padding: 0 5%; color: #fff; }
+
+.bar dl dd.gage { width: 70%; height: 30px; padding: 0 5%; }
+
+.bar dl dd.gage span { display: block; float: left; width: 75%; height: 100%; }
+
+.bar dl dd.gage i { display: block; height: 100%; background-color: #f17c2e; transition: width 500ms ease; }
+
+.bar dl dd.gage em { display: block; float: right; width: 20%; height: 100%; }
+
+.abBox:hover .css i { width: 80%; }
+
+.abBox:hover .scss i { width: 80%; }
+
+.abBox:hover .js i { width: 60%; }
+
+.abBox:hover .git i { width: 70%; }
+
+#product_01 { width: 100%; height: auto; margin-top: 14rem; }
 
 #product_01 p { display: block; width: 100%; height: 25px; color: #fff; }
 
