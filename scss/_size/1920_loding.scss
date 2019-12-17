@@ -1,13 +1,18 @@
-#wrap {width: 100%; height:100%;  padding-top: 15rem;}
-.portfolio {@include margin; width: 300px; height: 400px;
-.img {position: relative; width: 100%; height: 100%; @include url; background-size:auto; background-position:50% 40%; background-image: url("../img/logo_03.png");
-  p {position: absolute; right:0; left:0; bottom:60px; font-size:2rem; font-weight: bold; text-align: center; line-height:1.1;}
-  span {position: absolute; display: block; $w:5px; background-color:$deepred; 
+#wrap {width: 100%; height:100%;  padding-top: 15rem; background-size:cover; background-image: url("../img/gradient.svg");}
+.portfolio {@include margin; width: 300px; height:300px;
+.img {position: relative; width: 100%; height: 100%; @include url; 
+      background-size:50%; 
+      background-position:50% 40%; 
+      background-image: url("../img/logo_03_white.png");
+
+  p {position: absolute; right:0; left:0; bottom:60px; 
+    color:#fff; font-size:1.3rem; font-weight:500; text-align: center; line-height:1.3;}
+  span {position: absolute; display: block; $w:1px; background-color: #fff;
    &.bottom {width:100%; height: $w; bottom:0; left:0; background-color:transparent;
 &:before {content:" "; display: block; width:0; height:$w; position: absolute; right:50%; bottom:0; 
-          background-color: $deepred; transition:all 0.2s ease;}
+  background-color: #fff; transition:all 0.2s ease;}
 &:after {content:" "; display: block; width:0; height:$w; position: absolute; right:0; bottom:0; 
-          background-color: $deepred; transition:all 0.2s ease 0.7s;}
+  background-color: #fff; transition:all 0.2s ease 0.7s;}
 } // .bottom
    &.left {width:$w; height:0; bottom:0; left:0; transition:all 0.2s ease 0.1s;}
    &.top {width:0; height:$w; top:0; left:0; transition:all 0.2s ease 0.3s;}

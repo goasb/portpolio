@@ -1,3 +1,5 @@
+// 로딩창
+
 (function($){
     const active = $('.img');
     setTimeout(function(){

@@ -1,5 +1,7 @@
 // (function($){
 
+
+//  // ==========================================================
 //  const win = $(window);
 //  const htmlEl = $('html,body');
 //  const wrap = $('#wrap');
@@ -26,8 +28,39 @@
 //     };
 //  });
 
+//  const abBox=$('.abBox');
+//  let abBox_offset = abBox.offset().top;
+//  let myAbBox_offset = abBox_offset - (winH/2);
 
-// //  마우스 휠 ===================================
+// const count = $('.count');
+// const countRel = [];
+// for(let i=0; i<count.length; i++){
+//     countRel[i] = parseInt( $('.count').eq(i).text() );
+//     $('.count').eq(i).text(0);
+// }
+
+// const countFn = function(){
+
+// }
+
+//  win.on('scroll', function(){
+//     let winScroll = win.scrollTop();
+
+//     if(winScroll > myAbBox_offset){
+//         abBox.addClass('active');
+
+//         count.each(function(i,data){
+//            let rel =  countRel[i], k=0, go;
+//            const countStop = function(){ clearInterval(go); }
+//            const countGo = function(){ go = setInterval(function(){  ( k < rel) ?  $('.count').eq(i).text(++k) :  countStop(); } ,10);   };
+//            countGo();
+//         });
+//     }else{
+//         abBox.removeClass('active');
+//     };
+//  });
+
+// // //  마우스 휠 ===================================
 //  htmlEl.animate({scrollTop:0});
 //  let myScrollElTop = [];
 //  let scrollLen = scrollEl.length;
@@ -48,7 +81,7 @@
 //         timed,'easeOutSine',function(){
 //             myStatus = true;
 //    });
-//  }; // scrollMagic()
+// }; // scrollMagic()
 
 //  $(window).on('mousewheel DOMMouseScroll',function(e){
 //      if(e.originalEvent.wheelDelta){
@@ -63,7 +96,7 @@
 //         if(useN < 0){useN = 0;} ScrollMagic();}
 //      }
 //  });
-//  //  마우스 휠 ===================================
+// //  마우스 휠 ===================================
 //     gnbLink.on('click',function(e){
 //         e.preventDefault();
 //         useN = $(this).parents('li').index();
