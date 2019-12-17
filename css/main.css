@@ -59,7 +59,9 @@
 
 #about p { font-size: 1rem; font-weight: 500; }
 
-#about .profile { float: left; width: 1350px; height: auto; margin-top: 100px; transition: all 1s ease; opacity: 0; }
+#about p a { display: block; color: #fff; }
+
+#about .profile { float: left; width: 1350px; height: auto; margin-top: 200px; transition: all 1.5s ease; opacity: 0; }
 
 #about .profile .img { float: left; margin-right: 300px; transform: translateX(50%); width: 250px; height: 320px; background-color: #fff; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-size: cover; background-position: 50% 20%; background-image: url("../img/chojaeyeong.png"); }
 
@@ -67,7 +69,7 @@
 
 #about .profile .career { float: left; width: 400px; height: 500px; }
 
-#about .profile.action { margin-top: 0; opacity: 1; }
+#about .profile.action { margin-top: 50px; opacity: 1; }
 
 #skill { width: 100%; height: auto; }
 
