@@ -1,5 +1,5 @@
 #wrap {width: 100%; height:auto; @include url; background-size:cover; background-image: url("../img/wrap.svg"); max-width:1920px;}
-.scroll{padding-top:200px;}
+.scroll{padding-top:100px;}
 #headBox {position: fixed; z-index:10; width:100%; height: 100px; background-color:rgba(0,0,0,0.2); max-width:1920px;
 h1 {position: absolute; left:5%; width: 100px; height:100%;
     @include url; 
@@ -54,43 +54,24 @@ a {display: block; width: 100%; height: 100%;}}
  p {font-size: 1rem; font-weight:500;} // p
 
 
- .profile {float:left; width:1350px; height:auto; margin-top:200px; transition:all 1.5s ease; opacity:0; 
+ .profile {position: relative; float:left; width:1350px; height:auto; margin-top:300px; 
+  transition:all 1.5s ease; opacity:0; 
+
+  .motion_dell {@include motion;} // motion_dell
+  .motion_tesla {@include motion; bottom:20%;} // motion_tesla
+
   .img {float:left; margin-right:300px; margin-top:20px; transform: translateX(50%); width: 180px; height: 230px; background-color: #fff;
  @include url; background-size:cover; 
  background-position:50% 20%; 
  background-image: url("../img/chojaeyeong.png"); 
  box-shadow: 0 3px 70px 5px #3c3c97;}
   
- .aboutme {float:left; width: 400px; height:500px; }
- .career {float:left; width: 400px; height: 500px; 
-  .motion {position: relative; width: 200px; height:40px;
-  a {display: block; width:100%; height:100%; text-align: center; line-height:40px; margin-top:78px; 
-    background-color: transparent; font-weight:bold; border-radius:3px; color:#fff;} // a
-    
-    span {position: absolute; z-index:10; display: block; $w:1px; background-color:#fff;
-     &.bottom {width: 200px; height:$w; bottom:0; left:0; background-color: transparent;
-    &:before {content:" "; display: block; width: 0; height:$w; position: absolute; right:50%;
-              background-color: #fff; }
-    &:after {content:" "; display: block; width: 0; height:$w; position: absolute; right:0; bottom:0;
-             background-color: #fff; } 
-      } // &.bottom
-      &.left {width:$w; height: 0; bottom:0; left:0;}
-      &.top {width:0; height:$w; top:0; left:0;}
-      &.right {width:$w; height: 0; top:0; right:0;}
-    } // span
-    &.active {
-      .bottom:before {width: 50%; transition:all 0.2s ease;}
-      .bottom::after {width: 50%; transition:all 0.2s ease 0.7s;}
-      .left {height: 100%; transition:all 0.2s ease 0.1s;}
-      .top {width: 100%; transition:all 0.2s ease 0.3s;}
-      .right {height: 100%; transition:all 0.2s ease 0.5s;}
-    } // &.active
-   } // motion
-  } // career
+ .aboutme {float:left; width: 400px; height:500px;}
+ .career {float:left; width: 400px; height: 500px;} // career
  } // .profile
 } // #about
 
-#about .profile.action{margin-top:50px; opacity:1;}
+#about .profile.action{margin-top:150px; opacity:1;}
     
 
 #skill {width: 100%; height: auto; }
@@ -138,6 +119,8 @@ h2 {margin:auto; font-size:4rem; line-height:100px; text-align: center; width: 3
 #product_01 {width: 100%; height:auto; margin-top:14rem; 
   p {display: block; width:100%; height: 25px; color:#fff;}
  .pfBox {position: relative; width:1300px; height:100%; margin:auto;
+  a {display: block; margin-bottom:20px; width: 100%; height:20px; font-weight:bold; color:#fff;}
+  span {font-weight:bold;}
  
 }
  .pf_dell {float:left; position: relative; width: 600px; height: 680px; border:2px solid #fff; border-radius:3px;
@@ -159,8 +142,7 @@ h2 {margin:auto; font-size:4rem; line-height:100px; text-align: center; width: 3
 
     .site_name {margin-left:150px; width: 300px; height:auto; 
       p {margin-bottom:22px; width:100%; height:20px; font-weight:bold;}
-      a {display: block; margin-bottom:20px; width: 100%; height:20px; font-weight:bold; color:#fff;}
-      span {font-weight:bold;}
+     
    } // .site_name
   } // .product_text
  } // .pf_dell
@@ -169,7 +151,7 @@ h2 {margin:auto; font-size:4rem; line-height:100px; text-align: center; width: 3
   .img_tesla {position: absolute; right:0; left:0; top:62px; margin:auto; width: 360px; height: 230px; background-color: #333; overflow: hidden;
    img {position: absolute; top:0; left:0; width: 370px; height:auto; transition:top 2s ease;}
   } // .img_dell
-  &:hover img {top:-635px;}
+  &:hover img {top:-1020px;}
 
   .moniter {position: absolute; right:0; left:0; top:50px; margin:auto; width: 400px; height: 300px; 
     @include url;
@@ -182,8 +164,6 @@ h2 {margin:auto; font-size:4rem; line-height:100px; text-align: center; width: 3
     } // .site
     .site_name {margin-left:150px; width: 380px; height:auto;
       p {margin-bottom:22px; width:100%; height:20px; font-weight:bold;}
-      a {display: block; margin-bottom:20px; width: 100%; height:20px; font-weight:bold;}
-      span {font-weight:bold;}
    } // .site_name
   } // .product_text 깃 웹사이트 사이트맵 pdf 
  } // .pf_tesla
