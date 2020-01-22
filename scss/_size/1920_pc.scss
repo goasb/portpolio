@@ -61,8 +61,53 @@ a {display: block; width: 100%; height: 100%;}}
  .profile {position: relative; float:left; width:1350px; height:auto; margin-top:300px; 
   transition:all 1.5s ease; opacity:0; 
 
-  .motion_dell {@include motion;} // motion_dell
-  .motion_tesla {@include motion; bottom:20%;} // motion_tesla
+  .motion_dell {position: absolute; bottom:5%; left:35.5%; width:150px; height:40px; 
+    a {display: block; width:100%; height:100%; text-align: center; line-height:40px; 
+      background-color: transparent; font-weight:bold; border-radius:3px; color:#fff;} // a
+      
+      span {position: absolute; z-index:10; display: block; $w:1px; background-color:#fff;
+       &.bottom {width: 150px; height:$w; bottom:0; left:0; background-color: transparent;
+      &:before {content:" "; display: block; width: 0; height:$w; position: absolute; right:50%;
+                background-color: #fff; }
+      &:after {content:" "; display: block; width: 0; height:$w; position: absolute; right:0; bottom:0;
+               background-color: #fff; } 
+        } // &.bottom
+        &.left {width:$w; height: 0; bottom:0; left:0;}
+        &.top {width:0; height:$w; top:0; left:0;}
+        &.right {width:$w; height: 0; top:0; right:0;}
+      } // span
+      &.active {
+        .bottom:before {width: 50%; transition:all 0.2s ease;}
+        .bottom::after {width: 50%; transition:all 0.2s ease 0.7s;}
+        .left {height: 100%; transition:all 0.2s ease 0.1s;}
+        .top {width: 100%; transition:all 0.2s ease 0.3s;}
+        .right {height: 100%; transition:all 0.2s ease 0.5s;}
+      } // &.active
+  } // motion_dell
+
+  .motion_tesla {position: absolute; bottom:5%; left:50%; width:150px; height:40px; 
+    a {display: block; width:100%; height:100%; text-align: center; line-height:40px; 
+      background-color: transparent; font-weight:bold; border-radius:3px; color:#fff;} // a
+      
+      span {position: absolute; z-index:10; display: block; $w:1px; background-color:#fff;
+       &.bottom {width: 150px; height:$w; bottom:0; left:0; background-color: transparent;
+      &:before {content:" "; display: block; width: 0; height:$w; position: absolute; right:50%;
+                background-color: #fff; }
+      &:after {content:" "; display: block; width: 0; height:$w; position: absolute; right:0; bottom:0;
+               background-color: #fff; } 
+        } // &.bottom
+        &.left {width:$w; height: 0; bottom:0; left:0;}
+        &.top {width:0; height:$w; top:0; left:0;}
+        &.right {width:$w; height: 0; top:0; right:0;}
+      } // span
+      &.active {
+        .bottom:before {width: 50%; transition:all 0.2s ease;}
+        .bottom::after {width: 50%; transition:all 0.2s ease 0.7s;}
+        .left {height: 100%; transition:all 0.2s ease 0.1s;}
+        .top {width: 100%; transition:all 0.2s ease 0.3s;}
+        .right {height: 100%; transition:all 0.2s ease 0.5s;}
+      } // &.active
+  } // motion_tesla
 
   .img {float:left; margin-right:300px; margin-top:20px; transform: translateX(50%); width: 180px; height: 230px; background-color: #fff;
  @include url; background-size:cover; 
@@ -106,13 +151,13 @@ h2 {margin:auto; font-size:4rem; line-height:100px; text-align: center; width: 3
 .abBox.active .ps  i{width: 90%;}
 .abBox.active .ai i{width: 90%;}
 .abBox.active .id  i{width: 70%;}
-.abBox.active .html  i{width: 80%;}
+.abBox.active .html  i{width:90%;}
 
 
 .abBox  i{width: 0;}
-.abBox.active .css  i{width: 80%;}
-.abBox.active .scss  i{width: 80%;}
-.abBox.active .js  i{width: 60%;}
+.abBox.active .css  i{width: 90%;}
+.abBox.active .scss  i{width: 90%;}
+.abBox.active .js  i{width: 80%;}
 .abBox.active .git  i{width: 70%;}
 
 
@@ -155,7 +200,7 @@ h2 {margin:auto; font-size:4rem; line-height:100px; text-align: center; width: 3
   .img_tesla {position: absolute; right:0; left:0; top:62px; margin:auto; width: 360px; height: 230px; background-color: #333; overflow: hidden;
    img {position: absolute; top:0; left:0; width: 370px; height:auto; transition:top 2s ease;}
   } // .img_dell
-  &:hover img {top:-1020px;}
+  &:hover img {top:-1108px;}
 
   .moniter {position: absolute; right:0; left:0; top:50px; margin:auto; width: 400px; height: 300px; 
     @include url;
@@ -189,7 +234,7 @@ h2 {margin:auto; font-size:4rem; line-height:100px; text-align: center; width: 3
  } // .loadBox
 
  .pf_info {width: 980px; height:auto; margin:auto;
-  p {font-weight:bold; text-align: center; line-height:1.6; margin-top:40px; color:#fff;}
+  p {text-align: center; line-height:1.6; margin-top:40px; color:#fff;}
   }// pf.info
  } // #footBox
 

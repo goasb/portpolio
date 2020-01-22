@@ -17,10 +17,10 @@
 
 
     motionT.find('a').on('mouseenter',function(){
-        motion.addClass('active');
+        motionT.addClass('active');
     });
     motionT.find('a').on('mouseleave',function(){
-        motion.removeClass('active');
+        motionT.removeClass('active');
     });
 
 })(jQuery);
