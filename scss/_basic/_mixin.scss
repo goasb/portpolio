@@ -108,9 +108,6 @@ $url:'../img/slide_01/'; // @mixin 사용전 경로 설정할것
 @mixin St_L_s ($c:#fff){font-size:13px; font-size:0.8125rem; color:$c; }
 @mixin St_L_s1 ($c:#fff){font-size:12px; font-size:0.75rem; color:$c; }
 
-@mixin url {background-repeat: no-repeat;
-            background-position: 50% 50%;
-            background-size: contain;}
 
 // ======================================================================
 // 768 mixin
@@ -174,3 +171,32 @@ $url:'../img/slide_01/'; // @mixin 사용전 경로 설정할것
     > a {@include hidden;}
   } // .more_02
 } // .tapBox
+
+
+@mixin url {background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;}
+
+@mixin motion {position: absolute; bottom:30%; left:35.5%; width:150px; height:40px; 
+  a {display: block; width:100%; height:100%; text-align: center; line-height:40px; 
+    background-color: transparent; font-weight:bold; border-radius:3px; color:#fff;} // a
+    
+    span {position: absolute; z-index:10; display: block; $w:1px; background-color:#fff;
+     &.bottom {width: 150px; height:$w; bottom:0; left:0; background-color: transparent;
+    &:before {content:" "; display: block; width: 0; height:$w; position: absolute; right:50%;
+              background-color: #fff; }
+    &:after {content:" "; display: block; width: 0; height:$w; position: absolute; right:0; bottom:0;
+             background-color: #fff; } 
+      } // &.bottom
+      &.left {width:$w; height: 0; bottom:0; left:0;}
+      &.top {width:0; height:$w; top:0; left:0;}
+      &.right {width:$w; height: 0; top:0; right:0;}
+    } // span
+    &.active {
+      .bottom:before {width: 50%; transition:all 0.2s ease;}
+      .bottom::after {width: 50%; transition:all 0.2s ease 0.7s;}
+      .left {height: 100%; transition:all 0.2s ease 0.1s;}
+      .top {width: 100%; transition:all 0.2s ease 0.3s;}
+      .right {height: 100%; transition:all 0.2s ease 0.5s;}
+    } // &.active
+}
