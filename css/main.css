@@ -1,6 +1,6 @@
 /* dell.css */
 /* @mixin myname(){}   // @include myname(); @function myFn(){}  // myFn(); */
-@media screen and (min-width: 1280px) and (max-width: 1919px) { #wrap { width: 100%; height: auto; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-size: cover; background-image: url("../img/wrap.svg"); max-width: 1920px; }
+@media screen and (min-width: 1920px) { #wrap { width: 100%; height: auto; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-size: cover; background-image: url("../img/wrap.svg"); max-width: 1920px; }
   .scroll { padding-top: 100px; }
   #headBox { position: fixed; z-index: 10; width: 100%; height: 100px; background-color: rgba(0, 0, 0, 0.2); max-width: 1920px; }
   #headBox h1 { position: absolute; left: 5%; width: 100px; height: 100%; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-size: 70%; background-image: url("../img/logo_03_white.png"); }
@@ -129,7 +129,7 @@
   #footBox .pf_info { width: 980px; height: auto; margin: auto; }
   #footBox .pf_info p { text-align: center; line-height: 1.6; margin-top: 40px; color: #fff; } }
 
-@media screen and (min-width: 768px) and (max-width: 1279px) { #wrap { width: 100%; height: auto; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-size: cover; background-image: url("../img/wrap.svg"); max-width: 1280px; }
+@media screen and (min-width: 1280px) and (max-width: 1919px) { #wrap { width: 100%; height: auto; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-size: cover; background-image: url("../img/wrap.svg"); max-width: 1280px; }
   .scroll { padding-top: 100px; }
   #headBox { position: fixed; z-index: 10; width: 100%; height: 100px; background-color: rgba(0, 0, 0, 0.2); max-width: 1920px; }
   #headBox h1 { position: absolute; left: 5%; width: 100px; height: 100%; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-size: 70%; background-image: url("../img/logo_03_white.png"); }
@@ -237,6 +237,148 @@
   #product_01 .pf_tesla { position: relative; float: right; width: 600px; height: 680px; border: 2px solid #fff; border-radius: 3px; }
   #product_01 .pf_tesla .img_tesla { position: absolute; right: 0; left: 0; top: 62px; margin: auto; width: 360px; height: 230px; background-color: #333; overflow: hidden; }
   #product_01 .pf_tesla .img_tesla img { position: absolute; top: 0; left: 0; width: 370px; height: auto; transition: top 2s ease; }
+  #product_01 .pf_tesla:hover img { top: -1108px; }
+  #product_01 .pf_tesla .moniter { position: absolute; right: 0; left: 0; top: 50px; margin: auto; width: 400px; height: 300px; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-image: url("../img/mac.png"); }
+  #product_01 .pf_tesla .product_text { position: absolute; bottom: 5%; left: 15%; width: 100%; height: auto; }
+  #product_01 .pf_tesla .product_text:before { content: " "; display: block; margin-bottom: 40px; width: 425px; height: 1px; background-color: #fff; }
+  #product_01 .pf_tesla .product_text .site { float: left; width: 120px; height: auto; }
+  #product_01 .pf_tesla .product_text .site p { display: block; margin-left: 10px; width: 100%; height: 20px; font-weight: bold; }
+  #product_01 .pf_tesla .product_text .site_name { margin-left: 150px; width: 380px; height: auto; }
+  #product_01 .pf_tesla .product_text .site_name p { margin-bottom: 22px; width: 100%; height: 20px; font-weight: bold; }
+  #footBox { width: 100%; height: 300px; margin-top: 15rem; }
+  #footBox a { display: block; width: 100%; height: 100%; font-weight: bold; color: #fff; }
+  #footBox .loadBox { width: 520px; height: auto; margin: auto; color: #fff; text-align: center; line-height: 50px; }
+  #footBox .loadBox div { position: relative; width: 100%; height: 100%; }
+  #footBox .loadBox div:before { content: " "; position: absolute; right: 0; display: block; width: 1px; height: 20px; background-color: #fff; transform: translateY(75%); }
+  #footBox .loadBox div:nth-child(4):before { display: none; }
+  #footBox .loadBox .git { float: left; width: 120px; height: 50px; }
+  #footBox .loadBox .web { float: left; width: 120px; height: 50px; }
+  #footBox .loadBox .site_map { float: left; width: 120px; height: 50px; }
+  #footBox .loadBox .pdf { float: left; margin-left: 20px; width: 120px; height: 50px; }
+  #footBox .pf_info { width: 980px; height: auto; margin: auto; }
+  #footBox .pf_info p { text-align: center; line-height: 1.6; margin-top: 40px; color: #fff; } }
+
+@media screen and (min-width: 480px) and (max-width: 768px) { #wrap { width: 100%; height: auto; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-size: cover; background-image: url("../img/wrap.svg"); }
+  #headBox { position: fixed; z-index: 10; width: 100%; height: 70px; background-color: rgba(0, 0, 0, 0.2); }
+  #headBox h1 { position: absolute; left: 5%; width: 100px; height: 100%; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-size: 50%; background-image: url("../img/logo_03_white.png"); }
+  #headBox h1 a { display: block; width: 100%; height: 100%; }
+  #headBox .gnb { position: absolute; right: 5%; width: 700px; height: 100%; }
+  #headBox .gnb ul { width: 100%; height: 100%; }
+  #headBox .gnb ul li { float: left; margin-left: 30px; width: 100px; height: 100%; font-weight: bold; text-align: center; line-height: 70px; }
+  #headBox .gnb ul li:nth-child(1) { margin-left: 0; }
+  #headBox .gnb ul li a { display: block; width: 100%; height: 100%; color: #fff; }
+  #banner { width: 100%; height: 600px; background-size: cover; background-image: url("../img/gradient.svg"); }
+  #banner .textBox { position: absolute; margin: auto; right: 0; left: 0; top: 0; bottom: 0; top: -10%; width: 100%; height: 250px; }
+  #banner .textBox h2 { font-size: 3rem; color: #fff; text-align: center; line-height: 1.1; }
+  #banner .textBox p { font-weight: bold; text-align: center; color: #fff; font-size: 0.9rem; padding-top: 50px; line-height: 1.7; }
+  #banner .textBox ul { position: absolute; margin: auto; left: 0; right: 0; width: 320px; height: auto; }
+  #banner .textBox ul li { float: left; margin-right: 53px; width: 40px; height: 40px; margin-top: 30px; }
+  #banner .textBox ul li:nth-child(1) { background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-size: 70%; background-image: url("../img/facebook.png"); }
+  #banner .textBox ul li:nth-child(2) { background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-size: 70%; background-image: url("../img/instar.png"); }
+  #banner .textBox ul li:nth-child(3) { background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-size: 70%; background-image: url("../img/naver.png"); }
+  #banner .textBox ul li:nth-child(4) { margin-right: 0; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-size: 70%; background-image: url("../img/google.png"); }
+  #banner .textBox ul li a { display: block; width: 100%; height: 100%; }
+  #banner .textBox ul li span { display: block; width: 0; height: 0; overflow: hidden; }
+  @keyframes mousewheel { 0% { opacity: 1;
+      top: 0; }
+    100% { opacity: 0;
+      top: 50%; } }
+  #banner .mouse { position: absolute; bottom: 4%; left: 0; right: 0; margin: auto; width: 25px; height: 45px; border: 2px solid #fff; border-radius: 15px; box-sizing: border-box; }
+  #banner .mouse .wheel { position: absolute; width: 4px; height: 10px; left: 50%; transform: translateX(-50%); text-indent: -2000px; background-color: #fff; border-radius: 10px; animation: mousewheel 1s linear infinite; }
+  #about { width: 100%; height: 700px; margin: auto; color: #fff; line-height: 2; padding-top: 1rem; box-sizing: border-box; }
+  #about h2 { font-size: 1.3rem; margin-bottom: 2rem; }
+  #about p { font-size: 0.9rem; font-weight: 500; }
+  #about .profile { position: relative; top: 0; float: left; width: 1350px; height: auto; transition: all 1000ms ease; opacity: 0; }
+  #about .profile .motion_dell { position: absolute; bottom: 5%; left: 32.5%; width: 150px; height: 40px; }
+  #about .profile .motion_dell a { display: block; width: 100%; height: 100%; text-align: center; line-height: 40px; background-color: transparent; font-weight: bold; border-radius: 3px; color: #fff; }
+  #about .profile .motion_dell span { position: absolute; z-index: 10; display: block; background-color: #fff; }
+  #about .profile .motion_dell span.bottom { width: 150px; height: 1px; bottom: 0; left: 0; background-color: transparent; }
+  #about .profile .motion_dell span.bottom:before { content: " "; display: block; width: 0; height: 1px; position: absolute; right: 50%; background-color: #fff; }
+  #about .profile .motion_dell span.bottom:after { content: " "; display: block; width: 0; height: 1px; position: absolute; right: 0; bottom: 0; background-color: #fff; }
+  #about .profile .motion_dell span.left { width: 1px; height: 0; bottom: 0; left: 0; }
+  #about .profile .motion_dell span.top { width: 0; height: 1px; top: 0; left: 0; }
+  #about .profile .motion_dell span.right { width: 1px; height: 0; top: 0; right: 0; }
+  #about .profile .motion_dell.active .bottom:before { width: 50%; transition: all 0.2s ease; }
+  #about .profile .motion_dell.active .bottom::after { width: 50%; transition: all 0.2s ease 0.7s; }
+  #about .profile .motion_dell.active .left { height: 100%; transition: all 0.2s ease 0.1s; }
+  #about .profile .motion_dell.active .top { width: 100%; transition: all 0.2s ease 0.3s; }
+  #about .profile .motion_dell.active .right { height: 100%; transition: all 0.2s ease 0.5s; }
+  #about .profile .motion_tesla { position: absolute; bottom: 5%; left: 45%; width: 150px; height: 40px; }
+  #about .profile .motion_tesla a { display: block; width: 100%; height: 100%; text-align: center; line-height: 40px; background-color: transparent; font-weight: bold; border-radius: 3px; color: #fff; }
+  #about .profile .motion_tesla span { position: absolute; z-index: 10; display: block; background-color: #fff; }
+  #about .profile .motion_tesla span.bottom { width: 150px; height: 1px; bottom: 0; left: 0; background-color: transparent; }
+  #about .profile .motion_tesla span.bottom:before { content: " "; display: block; width: 0; height: 1px; position: absolute; right: 50%; background-color: #fff; }
+  #about .profile .motion_tesla span.bottom:after { content: " "; display: block; width: 0; height: 1px; position: absolute; right: 0; bottom: 0; background-color: #fff; }
+  #about .profile .motion_tesla span.left { width: 1px; height: 0; bottom: 0; left: 0; }
+  #about .profile .motion_tesla span.top { width: 0; height: 1px; top: 0; left: 0; }
+  #about .profile .motion_tesla span.right { width: 1px; height: 0; top: 0; right: 0; }
+  #about .profile .motion_tesla.active .bottom:before { width: 50%; transition: all 0.2s ease; }
+  #about .profile .motion_tesla.active .bottom::after { width: 50%; transition: all 0.2s ease 0.7s; }
+  #about .profile .motion_tesla.active .left { height: 100%; transition: all 0.2s ease 0.1s; }
+  #about .profile .motion_tesla.active .top { width: 100%; transition: all 0.2s ease 0.3s; }
+  #about .profile .motion_tesla.active .right { height: 100%; transition: all 0.2s ease 0.5s; }
+  #about .profile .motion_nivea { position: absolute; bottom: 5%; left: 57%; width: 150px; height: 40px; }
+  #about .profile .motion_nivea a { display: block; width: 100%; height: 100%; text-align: center; line-height: 40px; background-color: transparent; font-weight: bold; border-radius: 3px; color: #fff; }
+  #about .profile .motion_nivea span { position: absolute; z-index: 10; display: block; background-color: #fff; }
+  #about .profile .motion_nivea span.bottom { width: 150px; height: 1px; bottom: 0; left: 0; background-color: transparent; }
+  #about .profile .motion_nivea span.bottom:before { content: " "; display: block; width: 0; height: 1px; position: absolute; right: 50%; background-color: #fff; }
+  #about .profile .motion_nivea span.bottom:after { content: " "; display: block; width: 0; height: 1px; position: absolute; right: 0; bottom: 0; background-color: #fff; }
+  #about .profile .motion_nivea span.left { width: 1px; height: 0; bottom: 0; left: 0; }
+  #about .profile .motion_nivea span.top { width: 0; height: 1px; top: 0; left: 0; }
+  #about .profile .motion_nivea span.right { width: 1px; height: 0; top: 0; right: 0; }
+  #about .profile .motion_nivea.active .bottom:before { width: 50%; transition: all 0.2s ease; }
+  #about .profile .motion_nivea.active .bottom::after { width: 50%; transition: all 0.2s ease 0.7s; }
+  #about .profile .motion_nivea.active .left { height: 100%; transition: all 0.2s ease 0.1s; }
+  #about .profile .motion_nivea.active .top { width: 100%; transition: all 0.2s ease 0.3s; }
+  #about .profile .motion_nivea.active .right { height: 100%; transition: all 0.2s ease 0.5s; }
+  #about .profile .img { float: left; margin-right: 300px; margin-top: 120px; transform: translateX(100%); width: 140px; height: 180px; background-color: #fff; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-size: cover; background-position: 50% 20%; background-image: url("../img/chojaeyeong.png"); box-shadow: 0 3px 70px 5px #3c3c97; }
+  #about .profile .aboutme { float: left; margin-top: 100px; width: 400px; height: 430px; }
+  #about .profile .career { float: left; margin-top: 100px; width: 400px; height: 430px; }
+  #about .profile.action { opacity: 1; }
+  #skill { width: 100%; height: 800px; }
+  .abtitle { width: 100%; height: 180px; padding-top: 4rem; box-sizing: border-box; }
+  .abtitle h2 { margin: auto; font-size: 3rem; line-height: 100px; text-align: center; width: 300px; height: 100px; color: #fff; }
+  .abtitle p { font-size: 0.8rem; color: #fff; text-align: center; }
+  .abBox { width: 1000px; height: 340px; margin: auto; margin-top: 20px; border: 2px solid #ccc; }
+  .abProgram { float: left; width: 50%; height: auto; min-height: 500px; }
+  .bar { width: 100%; height: auto; margin-bottom: 10px; color: #fff; }
+  .bar dl { float: left; width: 90%; height: 60px; transform: translateX(6%); margin-top: 20px; }
+  .bar dl dt { float: left; font-weight: bold; width: 100px; height: 50px; line-height: 13px; }
+  .bar dl dd { float: left; height: 20px; margin-bottom: 10px; }
+  .bar dl dd.narr { width: 50%; font-size: 0.8rem; color: #fff; }
+  .bar dl dd.gage { width: 70%; height: 20px; }
+  .bar dl dd.gage > span { float: left; width: 80%; height: 100%; background-color: transparent; border: 1px solid #fff; border-radius: 2px; }
+  .bar dl dd.gage i { display: block; height: 100%; background-color: rgba(255, 255, 255, 0.2); border-right: 1px solid #fff; transition: width 1000ms ease; }
+  .bar dl dd.gage em { float: right; width: 50px; height: 100%; line-height: 20px; font-style: normal; }
+  .abBox i { width: 0; }
+  .abBox.active .ps i { width: 90%; }
+  .abBox.active .ai i { width: 90%; }
+  .abBox.active .id i { width: 70%; }
+  .abBox.active .html i { width: 90%; }
+  .abBox i { width: 0; }
+  .abBox.active .css i { width: 90%; }
+  .abBox.active .scss i { width: 90%; }
+  .abBox.active .js i { width: 80%; }
+  .abBox.active .git i { width: 70%; }
+  #product_01 { width: 100%; height: auto; margin-top: 14rem; }
+  #product_01 p { display: block; width: 100%; height: 25px; color: #fff; }
+  #product_01 .pfBox { position: relative; width: 1300px; height: 100%; margin: auto; }
+  #product_01 .pfBox a { display: block; margin-bottom: 20px; width: 100%; height: 20px; font-weight: bold; color: #fff; }
+  #product_01 .pfBox span { font-weight: bold; }
+  #product_01 .pf_dell { position: relative; margin: auto; top: 150px; width: 1000px; height: 300px; margin-top: 10rem; border: 2px solid #fff; border-radius: 3px; }
+  #product_01 .pf_dell .img_dell { position: absolute; right: 0; left: 0; top: 59px; margin: auto; width: 240px; height: 140px; transition: all .5s ease; background-color: #333; overflow: hidden; /*          @include url; background-size:cover; background-image: url("../../img/main_pull.png"); */ }
+  #product_01 .pf_dell .img_dell img { position: absolute; z-index: 100; top: 0; left: 0; width: 240px; height: auto; transition: top 2s ease; }
+  #product_01 .pf_dell:hover img { top: -715px; }
+  #product_01 .pf_dell .moniter { position: relative; z-index: 100; right: 0; left: 0; top: 50px; margin: auto; width: 250px; height: 200px; overflow: hidden; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-image: url("../img/mac.png"); }
+  #product_01 .pf_dell .product_text { position: absolute; bottom: 5%; left: 15%; width: 100%; height: auto; }
+  #product_01 .pf_dell .product_text:before { content: " "; display: block; margin-bottom: 40px; width: 425px; height: 1px; background-color: #fff; }
+  #product_01 .pf_dell .product_text .site { float: left; width: 120px; height: auto; }
+  #product_01 .pf_dell .product_text .site p { display: block; margin-left: 10px; width: 100%; height: 20px; font-weight: bold; color: #fff; }
+  #product_01 .pf_dell .product_text .site_name { margin-left: 150px; width: 300px; height: auto; }
+  #product_01 .pf_dell .product_text .site_name p { margin-bottom: 22px; width: 100%; height: 20px; font-weight: bold; }
+  #product_01 .pf_tesla { float: left; position: relative; width: 500px; height: 300px; margin-top: 10rem; border: 2px solid #fff; border-radius: 3px; margin-left: 200px; }
+  #product_01 .pf_tesla .img_tesla { position: absolute; right: 0; left: 0; top: 62px; margin: auto; width: 360px; height: 230px; background-color: #333; overflow: hidden; }
+  #product_01 .pf_tesla .img_tesla img { position: absolute; top: 0; left: 0; width: 370px; max-width: 370px; height: auto; transition: top 2s ease; }
   #product_01 .pf_tesla:hover img { top: -1108px; }
   #product_01 .pf_tesla .moniter { position: absolute; right: 0; left: 0; top: 50px; margin: auto; width: 400px; height: 300px; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-image: url("../img/mac.png"); }
   #product_01 .pf_tesla .product_text { position: absolute; bottom: 5%; left: 15%; width: 100%; height: auto; }
