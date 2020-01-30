@@ -1,6 +1,7 @@
 /* dell.css */
 /* @mixin myname(){}   // @include myname(); @function myFn(){}  // myFn(); */
-@media screen and (min-width: 1920px) { #wrap { width: 100%; height: auto; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-size: cover; background-image: url("../img/wrap.svg"); max-width: 1920px; }
+@media screen and (min-width: 1920px) { a:focus { outline: 0; }
+  #wrap { width: 100%; height: auto; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-size: cover; background-image: url("../img/wrap.svg"); max-width: 1920px; }
   .scroll { padding-top: 100px; }
   #headBox { position: fixed; z-index: 10; width: 100%; height: 100px; background-color: rgba(0, 0, 0, 0.2); max-width: 1920px; }
   #headBox h1 { position: absolute; left: 5%; width: 100px; height: 100%; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-size: 70%; background-image: url("../img/logo_03_white.png"); }
@@ -29,6 +30,7 @@
   #banner .mouse { position: absolute; bottom: 4%; left: 0; right: 0; margin: auto; width: 30px; height: 50px; border: 2px solid #fff; border-radius: 15px; box-sizing: border-box; }
   #banner .mouse .wheel { position: absolute; width: 4px; height: 10px; left: 50%; transform: translateX(-50%); text-indent: -2000px; background-color: #fff; border-radius: 10px; animation: mousewheel 1s linear infinite; }
   #about { width: 1400px; height: 800px; margin: auto; margin-top: 15rem; color: #fff; line-height: 2; }
+  #about .scroll { padding-top: -100px; }
   #about h2 { font-size: 2rem; margin-bottom: 2rem; }
   #about p { font-size: 1rem; font-weight: 500; }
   #about .profile { position: relative; float: left; width: 1350px; height: auto; margin-top: 300px; transition: all 1.5s ease; opacity: 0; }
@@ -60,6 +62,20 @@
   #about .profile .motion_tesla.active .left { height: 100%; transition: all 0.2s ease 0.1s; }
   #about .profile .motion_tesla.active .top { width: 100%; transition: all 0.2s ease 0.3s; }
   #about .profile .motion_tesla.active .right { height: 100%; transition: all 0.2s ease 0.5s; }
+  #about .profile .motion_nivea { position: absolute; bottom: 5%; left: 64%; width: 150px; height: 40px; }
+  #about .profile .motion_nivea a { display: block; width: 100%; height: 100%; text-align: center; line-height: 40px; background-color: transparent; font-weight: bold; border-radius: 3px; color: #fff; }
+  #about .profile .motion_nivea span { position: absolute; z-index: 10; display: block; background-color: #fff; }
+  #about .profile .motion_nivea span.bottom { width: 150px; height: 1px; bottom: 0; left: 0; background-color: transparent; }
+  #about .profile .motion_nivea span.bottom:before { content: " "; display: block; width: 0; height: 1px; position: absolute; right: 50%; background-color: #fff; }
+  #about .profile .motion_nivea span.bottom:after { content: " "; display: block; width: 0; height: 1px; position: absolute; right: 0; bottom: 0; background-color: #fff; }
+  #about .profile .motion_nivea span.left { width: 1px; height: 0; bottom: 0; left: 0; }
+  #about .profile .motion_nivea span.top { width: 0; height: 1px; top: 0; left: 0; }
+  #about .profile .motion_nivea span.right { width: 1px; height: 0; top: 0; right: 0; }
+  #about .profile .motion_nivea.active .bottom:before { width: 50%; transition: all 0.2s ease; }
+  #about .profile .motion_nivea.active .bottom::after { width: 50%; transition: all 0.2s ease 0.7s; }
+  #about .profile .motion_nivea.active .left { height: 100%; transition: all 0.2s ease 0.1s; }
+  #about .profile .motion_nivea.active .top { width: 100%; transition: all 0.2s ease 0.3s; }
+  #about .profile .motion_nivea.active .right { height: 100%; transition: all 0.2s ease 0.5s; }
   #about .profile .img { float: left; margin-right: 300px; margin-top: 20px; transform: translateX(50%); width: 180px; height: 230px; background-color: #fff; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-size: cover; background-position: 50% 20%; background-image: url("../img/chojaeyeong.png"); box-shadow: 0 3px 70px 5px #3c3c97; }
   #about .profile .aboutme { float: left; width: 400px; height: 500px; }
   #about .profile .career { float: left; width: 400px; height: 500px; }
@@ -89,33 +105,44 @@
   .abBox.active .scss i { width: 90%; }
   .abBox.active .js i { width: 80%; }
   .abBox.active .git i { width: 70%; }
-  #product_01 { width: 100%; height: auto; margin-top: 14rem; }
-  #product_01 p { display: block; width: 100%; height: 25px; color: #fff; }
-  #product_01 .pfBox { position: relative; width: 1300px; height: 100%; margin: auto; }
-  #product_01 .pfBox a { display: block; margin-bottom: 20px; width: 100%; height: 20px; font-weight: bold; color: #fff; }
+  #product_01 { width: 100%; height: auto; margin-top: 14rem; margin-left: 180px; }
+  #product_01 p { display: block; font-size: 0.9rem; width: 100%; height: 25px; color: #fff; }
+  #product_01 .pfBox { position: relative; width: 100%; height: 100%; margin: auto; }
+  #product_01 .pfBox a { display: block; font-size: 0.9rem; margin-bottom: 20px; width: 100%; height: 20px; font-weight: bold; color: #fff; }
   #product_01 .pfBox span { font-weight: bold; }
-  #product_01 .pf_dell { float: left; position: relative; width: 600px; height: 680px; border: 2px solid #fff; border-radius: 3px; }
+  #product_01 .pf_dell { float: left; position: relative; margin-top: 5rem; width: 450px; height: 650px; border: 2px solid #fff; border-radius: 3px; }
   #product_01 .pf_dell .img_dell { position: absolute; right: 0; left: 0; top: 62px; margin: auto; width: 360px; height: 230px; background-color: #333; overflow: hidden; }
   #product_01 .pf_dell .img_dell img { position: absolute; top: 0; left: 0; width: 370px; height: auto; transition: top 2s ease; }
   #product_01 .pf_dell:hover img { top: -635px; }
   #product_01 .pf_dell .moniter { position: absolute; right: 0; left: 0; top: 50px; margin: auto; width: 400px; height: 300px; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-image: url("../img/mac.png"); }
-  #product_01 .pf_dell .product_text { position: absolute; bottom: 5%; left: 15%; width: 100%; height: auto; }
-  #product_01 .pf_dell .product_text:before { content: " "; display: block; margin-bottom: 40px; width: 425px; height: 1px; background-color: #fff; }
-  #product_01 .pf_dell .product_text .site { float: left; width: 120px; height: auto; }
-  #product_01 .pf_dell .product_text .site p { display: block; margin-left: 10px; width: 100%; height: 20px; font-weight: bold; color: #fff; }
-  #product_01 .pf_dell .product_text .site_name { margin-left: 150px; width: 300px; height: auto; }
+  #product_01 .pf_dell .product_text { position: absolute; bottom: 2%; width: 100%; height: auto; }
+  #product_01 .pf_dell .product_text:before { content: " "; display: block; position: absolute; margin: auto; right: 0; left: 0; top: 0; bottom: 0; top: -130%; width: 380px; height: 1px; background-color: #fff; }
+  #product_01 .pf_dell .product_text .site { float: left; margin-left: 35px; width: 120px; height: auto; }
+  #product_01 .pf_dell .product_text .site p { text-align: left; width: 100%; height: 20px; font-weight: bold; color: #fff; }
+  #product_01 .pf_dell .product_text .site_name { margin-left: 100px; width: 330px; height: auto; }
   #product_01 .pf_dell .product_text .site_name p { margin-bottom: 22px; width: 100%; height: 20px; font-weight: bold; }
-  #product_01 .pf_tesla { position: relative; float: right; width: 600px; height: 680px; border: 2px solid #fff; border-radius: 3px; }
+  #product_01 .pf_tesla { position: relative; left: -50%; margin-top: 5rem; float: right; margin-left: -50px; margin-right: -50px; width: 450px; height: 650px; border: 2px solid #fff; border-radius: 3px; }
   #product_01 .pf_tesla .img_tesla { position: absolute; right: 0; left: 0; top: 62px; margin: auto; width: 360px; height: 230px; background-color: #333; overflow: hidden; }
   #product_01 .pf_tesla .img_tesla img { position: absolute; top: 0; left: 0; width: 370px; height: auto; transition: top 2s ease; }
   #product_01 .pf_tesla:hover img { top: -1108px; }
   #product_01 .pf_tesla .moniter { position: absolute; right: 0; left: 0; top: 50px; margin: auto; width: 400px; height: 300px; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-image: url("../img/mac.png"); }
-  #product_01 .pf_tesla .product_text { position: absolute; bottom: 5%; left: 15%; width: 100%; height: auto; }
-  #product_01 .pf_tesla .product_text:before { content: " "; display: block; margin-bottom: 40px; width: 425px; height: 1px; background-color: #fff; }
-  #product_01 .pf_tesla .product_text .site { float: left; width: 120px; height: auto; }
+  #product_01 .pf_tesla .product_text { position: absolute; bottom: 2%; width: 100%; height: auto; }
+  #product_01 .pf_tesla .product_text:before { content: " "; display: block; position: absolute; margin: auto; right: 0; left: 0; top: 0; bottom: 0; top: -130%; width: 380px; height: 1px; background-color: #fff; }
+  #product_01 .pf_tesla .product_text .site { float: left; margin-left: 25px; width: 120px; height: auto; }
   #product_01 .pf_tesla .product_text .site p { display: block; margin-left: 10px; width: 100%; height: 20px; font-weight: bold; }
   #product_01 .pf_tesla .product_text .site_name { margin-left: 150px; width: 380px; height: auto; }
   #product_01 .pf_tesla .product_text .site_name p { margin-bottom: 22px; width: 100%; height: 20px; font-weight: bold; }
+  #product_01 .pf_nivea { position: relative; margin-top: 5rem; float: right; width: 450px; height: 650px; border: 2px solid #fff; border-radius: 3px; }
+  #product_01 .pf_nivea .img_nivea { position: absolute; right: 0; left: 0; top: 62px; margin: auto; width: 360px; height: 230px; background-color: #333; overflow: hidden; }
+  #product_01 .pf_nivea .img_nivea img { position: absolute; top: 0; left: 0; width: 370px; height: auto; transition: top 2s ease; }
+  #product_01 .pf_nivea:hover img { top: -350px; }
+  #product_01 .pf_nivea .moniter { position: absolute; right: 0; left: 0; top: 50px; margin: auto; width: 400px; height: 300px; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-image: url("../img/mac.png"); }
+  #product_01 .pf_nivea .product_text { position: absolute; bottom: 2%; width: 100%; height: auto; }
+  #product_01 .pf_nivea .product_text:before { content: " "; display: block; position: absolute; margin: auto; right: 0; left: 0; top: 0; bottom: 0; top: -130%; width: 380px; height: 1px; background-color: #fff; }
+  #product_01 .pf_nivea .product_text .site { float: left; margin-left: 25px; width: 120px; height: auto; }
+  #product_01 .pf_nivea .product_text .site p { display: block; margin-left: 10px; width: 100%; height: 20px; font-weight: bold; }
+  #product_01 .pf_nivea .product_text .site_name { margin-left: 150px; width: 380px; height: auto; }
+  #product_01 .pf_nivea .product_text .site_name p { margin-bottom: 22px; width: 100%; height: 20px; font-weight: bold; }
   #footBox { width: 100%; height: 300px; margin-top: 15rem; }
   #footBox a { display: block; width: 100%; height: 100%; font-weight: bold; color: #fff; }
   #footBox .loadBox { width: 520px; height: auto; margin: auto; color: #fff; text-align: center; line-height: 50px; }
@@ -129,7 +156,8 @@
   #footBox .pf_info { width: 980px; height: auto; margin: auto; }
   #footBox .pf_info p { text-align: center; line-height: 1.6; margin-top: 40px; color: #fff; } }
 
-@media screen and (min-width: 1280px) and (max-width: 1919px) { #wrap { width: 100%; height: auto; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-size: cover; background-image: url("../img/wrap.svg"); max-width: 1280px; }
+@media screen and (min-width: 1280px) and (max-width: 1919px) { a:focus { outline: 0; }
+  #wrap { width: 100%; height: auto; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-size: cover; background-image: url("../img/wrap.svg"); max-width: 1280px; }
   .scroll { padding-top: 100px; }
   #headBox { position: fixed; z-index: 10; width: 100%; height: 100px; background-color: rgba(0, 0, 0, 0.2); max-width: 1920px; }
   #headBox h1 { position: absolute; left: 5%; width: 100px; height: 100%; background-repeat: no-repeat; background-position: 50% 50%; background-size: contain; background-size: 70%; background-image: url("../img/logo_03_white.png"); }

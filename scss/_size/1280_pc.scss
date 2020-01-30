@@ -1,6 +1,7 @@
 
 @media screen and (min-width:1280px) and (max-width:1919px) {
 
+  a:focus{outline:0;}
 
     #wrap {width: 100%; height:auto; @include url; background-size:cover; background-image: url("../img/wrap.svg"); max-width:1280px;}
     .scroll{padding-top:100px;}
