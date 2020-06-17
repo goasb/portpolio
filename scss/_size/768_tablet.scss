@@ -1,282 +1,1121 @@
-
 @media screen and (min-width:480px) and (max-width:768px) {
 
 
-    #wrap {width: 100%; height:auto; 
-      @include url; 
-      background-size:cover; 
-      background-image: url("../img/wrap.svg");}
-    
-    #headBox {position: fixed; z-index:10; width:100%; height: 70px; 
-      background-color:rgba(0,0,0,0.2);
-    
-    h1 {position: absolute; left:5%; width: 100px; height:100%;
-        @include url; 
-        background-size:50%; 
-        background-image: url("../img/logo_03_white.png");
-        
-    a {display: block; width: 100%; height: 100%;}}
-    
-    .gnb {position: absolute; right:5%; width: 700px; height: 100%; 
-     ul {width: 100%; height: 100%; 
-      li {float:left; margin-left:30px; width: 100px; height: 100%; 
-          font-weight:bold; text-align:center; line-height:70px; 
-      &:nth-child(1) {margin-left:0;}
-       a {display: block; width: 100%; height: 100%; color:#fff;}
-       } // li
-      } // ul
-     } // .gnb
-    } // #headBox
-    
-    #banner {width: 100%; height:600px; background-size:cover; background-image: url("../img/gradient.svg");
-      
-           
-     .textBox {position: absolute; @include margin; top:-10%; width:100%; height: 250px;
-      h2 {font-size:3rem; color:$white; text-align: center; line-height:1.1;}
-      p {font-weight:bold; text-align: center; color:#fff; font-size:0.9rem; padding-top:50px; line-height:1.7;}
-      ul {position: absolute; margin:auto; left:0; right:0; width: 320px; height: auto;
-       li {float:left; margin-right:53px; width:40px; height:40px; margin-top:30px;
-       &:nth-child(1) {@include url; background-size:70%; background-image:url("../img/facebook.png");}
-       &:nth-child(2) {@include url; background-size:70%; background-image:url("../img/instar.png");}
-       &:nth-child(3) {@include url; background-size:70%; background-image:url("../img/naver.png");}
-       &:nth-child(4) {margin-right:0; @include url; background-size:70%; background-image:url("../img/google.png");}
-        a {display: block; width: 100%; height: 100%;}
-        span {@include hidden;}
-       } // li
-      } // ul
-     } // .textBox
-     @keyframes mousewheel {
-         0% {opacity:1; top:0;}
-         100% {opacity:0; top:50%;}
-     }
-     .mouse {position: absolute; bottom:4%; left:0; right:0; margin:auto; width: 25px; height:45px; 
-        border:2px solid #fff; border-radius:15px; box-sizing:border-box;
-        .wheel {position: absolute; width: 4px; height: 10px; left:50%; transform:translateX(-50%);
-                text-indent:-2000px; background-color: #fff; border-radius:10px; 
-                animation:mousewheel 1s linear infinite}
-     }
-    } // #banner
-    
-    
-    #about {width:100%; height:700px; margin:auto; color:#fff; line-height:2;
-            padding-top:1rem; box-sizing:border-box;
-     h2 {font-size:1.3rem; margin-bottom:2rem;}
-     p {font-size: 0.9rem; font-weight:500;} // p
-    
-    
-     .profile {position: relative; top:0; float:left; width:1350px; height:auto;
-      transition:all 1000ms ease; opacity:0; 
-    
-      .motion_dell {position: absolute; bottom:5%; left:32.5%; width:150px; height:40px; 
-        a {display: block; width:100%; height:100%; text-align: center; line-height:40px; 
-          background-color: transparent; font-weight:bold; border-radius:3px; color:#fff;} // a
-          
-          span {position: absolute; z-index:10; display: block; $w:1px; background-color:#fff;
-           &.bottom {width: 150px; height:$w; bottom:0; left:0; background-color: transparent;
-          &:before {content:" "; display: block; width: 0; height:$w; position: absolute; right:50%;
-                    background-color: #fff; }
-          &:after {content:" "; display: block; width: 0; height:$w; position: absolute; right:0; bottom:0;
-                   background-color: #fff; } 
-            } // &.bottom
-            &.left {width:$w; height: 0; bottom:0; left:0;}
-            &.top {width:0; height:$w; top:0; left:0;}
-            &.right {width:$w; height: 0; top:0; right:0;}
-          } // span
-          &.active {
-            .bottom:before {width: 50%; transition:all 0.2s ease;}
-            .bottom::after {width: 50%; transition:all 0.2s ease 0.7s;}
-            .left {height: 100%; transition:all 0.2s ease 0.1s;}
-            .top {width: 100%; transition:all 0.2s ease 0.3s;}
-            .right {height: 100%; transition:all 0.2s ease 0.5s;}
-          } // &.active
-      } // motion_dell
-    
-      .motion_tesla {position: absolute; bottom:5%; left:45%; width:150px; height:40px; 
-        a {display: block; width:100%; height:100%; text-align: center; line-height:40px; 
-          background-color: transparent; font-weight:bold; border-radius:3px; color:#fff;} // a
-          
-          span {position: absolute; z-index:10; display: block; $w:1px; background-color:#fff;
-           &.bottom {width: 150px; height:$w; bottom:0; left:0; background-color: transparent;
-          &:before {content:" "; display: block; width: 0; height:$w; position: absolute; right:50%;
-                    background-color: #fff; }
-          &:after {content:" "; display: block; width: 0; height:$w; position: absolute; right:0; bottom:0;
-                   background-color: #fff; } 
-            } // &.bottom
-            &.left {width:$w; height: 0; bottom:0; left:0;}
-            &.top {width:0; height:$w; top:0; left:0;}
-            &.right {width:$w; height: 0; top:0; right:0;}
-          } // span
-          &.active {
-            .bottom:before {width: 50%; transition:all 0.2s ease;}
-            .bottom::after {width: 50%; transition:all 0.2s ease 0.7s;}
-            .left {height: 100%; transition:all 0.2s ease 0.1s;}
-            .top {width: 100%; transition:all 0.2s ease 0.3s;}
-            .right {height: 100%; transition:all 0.2s ease 0.5s;}
-          } // &.active
-      } // motion_tesla
-    
-      .motion_nivea {position: absolute; bottom:5%; left:57%; width:150px; height:40px; 
-        a {display: block; width:100%; height:100%; text-align: center; line-height:40px; 
-          background-color: transparent; font-weight:bold; border-radius:3px; color:#fff;} // a
-          
-          span {position: absolute; z-index:10; display: block; $w:1px; background-color:#fff;
-           &.bottom {width: 150px; height:$w; bottom:0; left:0; background-color: transparent;
-          &:before {content:" "; display: block; width: 0; height:$w; position: absolute; right:50%;
-                    background-color: #fff; }
-          &:after {content:" "; display: block; width: 0; height:$w; position: absolute; right:0; bottom:0;
-                   background-color: #fff; } 
-            } // &.bottom
-            &.left {width:$w; height: 0; bottom:0; left:0;}
-            &.top {width:0; height:$w; top:0; left:0;}
-            &.right {width:$w; height: 0; top:0; right:0;}
-          } // span
-          &.active {
-            .bottom:before {width: 50%; transition:all 0.2s ease;}
-            .bottom::after {width: 50%; transition:all 0.2s ease 0.7s;}
-            .left {height: 100%; transition:all 0.2s ease 0.1s;}
-            .top {width: 100%; transition:all 0.2s ease 0.3s;}
-            .right {height: 100%; transition:all 0.2s ease 0.5s;}
-          } // &.active
-      } // motion_nivea
-    
-      .img {float:left; margin-right:300px; margin-top:120px; transform: translateX(100%);
-            width:140px; height: 180px; background-color: #fff;
-     @include url; background-size:cover; 
-     background-position:50% 20%; 
-     background-image: url("../img/chojaeyeong.png"); 
-     box-shadow: 0 3px 70px 5px #3c3c97;}
-      
-     .aboutme {float:left; margin-top:100px; width: 400px; height:430px;}
-     .career {float:left; margin-top:100px; width: 400px; height: 430px;} // career
-     } // .profile
-    } // #about
-    
-    #about .profile.action{opacity:1;}
-        
-    
-    #skill {width: 100%; height:800px; }
-    .abtitle {width: 100%; height: 180px; padding-top:4rem; box-sizing:border-box; 
-    h2 {margin:auto; font-size:3rem; line-height:100px; text-align: center; 
-        width: 300px; height: 100px; color:#fff;}
-     p {font-size: 0.8rem; color:#fff; text-align: center;}
+  #wrap {
+    width: 100%;
+    height: auto;
+    @include url;
+    background-size: cover;
+    background-image: url("../img/wrap.svg");
+  }
+
+  #headBox {
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    height: 70px;
+    background-color: rgba(0, 0, 0, 0.2);
+
+    h1 {
+      position: absolute;
+      left: 5%;
+      width: 100px;
+      height: 100%;
+      @include url;
+      background-size: 50%;
+      background-image: url("../img/logo_03_white.png");
+
+      a {
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
     }
-    .abBox {width:1000px; height:340px; margin:auto; margin-top:20px; border:2px solid #ccc; }
-    .abProgram{float:left; width:50%; height:auto; min-height:500px;}
-    
-    .bar{width: 100%; height: auto; margin-bottom: 10px; color:#fff; 
-      dl{float:left; width: 90%; height:60px; transform: translateX(6%);
-        margin-top:20px; 
-       dt{float:left; font-weight:bold; width:100px; height:50px; line-height:13px;}
-       dd{float:left; height: 20px; margin-bottom: 10px; 
-         &.narr{width:50%; font-size: 0.8rem;  color:#fff;}
-         &.gage{width:70%; height:20px; 
-           >span{float:left; width:80%; height: 100%; background-color:transparent; border:1px solid #fff;
-          border-radius:2px;}
-           i{display: block; height: 100%; background-color:rgba(255,255,255,0.2); border-right:1px solid #fff;
-                        transition:width 1000ms ease;}
-             em{float:right; width:50px; height: 100%; line-height:20px; font-style: normal; }
-       } // &.gage
-      } // dd
-     } // dl
-    } // .bar
-    .abBox  i{width: 0;}
-    .abBox.active .ps  i{width: 90%;}
-    .abBox.active .ai i{width: 90%;}
-    .abBox.active .id  i{width: 70%;}
-    .abBox.active .html  i{width:90%;}
-    
-    
-    .abBox  i{width: 0;}
-    .abBox.active .css  i{width: 90%;}
-    .abBox.active .scss  i{width: 90%;}
-    .abBox.active .js  i{width: 80%;}
-    .abBox.active .git  i{width: 70%;}
-    
-    
-    
-    
-    
-    
-    #product_01 {width: 100%; height:auto; margin-top:14rem; 
-      p {display: block; width:100%; height: 25px; color:#fff;}
-     .pfBox {position: relative; width:1300px; height:100%; margin:auto;
-      a {display: block; margin-bottom:20px; width: 100%; height:20px; font-weight:bold; color:#fff;}
-      span {font-weight:bold;}
-     
+
+    .gnb {
+      position: absolute;
+      right: 5%;
+      width: 700px;
+      height: 100%;
+
+      ul {
+        width: 100%;
+        height: 100%;
+
+        li {
+          float: left;
+          margin-left: 30px;
+          width: 100px;
+          height: 100%;
+          font-weight: bold;
+          text-align: center;
+          line-height: 70px;
+
+          &:nth-child(1) {
+            margin-left: 0;
+          }
+
+          a {
+            display: block;
+            width: 100%;
+            height: 100%;
+            color: #fff;
+          }
+        }
+
+        // li
+      }
+
+      // ul
     }
-     .pf_dell {position: relative; margin:auto; top:150px; width:1000px; height:300px; margin-top:10rem;
-               border:2px solid #fff; border-radius:3px;
-              
-      .img_dell {position: absolute;right:0; left:0;top:59px; margin:auto; width:240px; height:140px;
-                 transition:all .5s ease;
-                 background-color: #333; overflow: hidden;
+
+    // .gnb
+  }
+
+  // #headBox
+
+  #banner {
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-image: url("../img/gradient.svg");
+
+
+    .textBox {
+      position: absolute;
+      @include margin;
+      top: -10%;
+      width: 100%;
+      height: 250px;
+
+      h2 {
+        font-size: 3rem;
+        color: $white;
+        text-align: center;
+        line-height: 1.1;
+      }
+
+      p {
+        font-weight: bold;
+        text-align: center;
+        color: #fff;
+        font-size: 0.9rem;
+        padding-top: 50px;
+        line-height: 1.7;
+      }
+
+      ul {
+        position: absolute;
+        margin: auto;
+        left: 0;
+        right: 0;
+        width: 320px;
+        height: auto;
+
+        li {
+          float: left;
+          margin-right: 53px;
+          width: 40px;
+          height: 40px;
+          margin-top: 30px;
+
+          &:nth-child(1) {
+            @include url;
+            background-size: 70%;
+            background-image: url("../img/facebook.png");
+          }
+
+          &:nth-child(2) {
+            @include url;
+            background-size: 70%;
+            background-image: url("../img/instar.png");
+          }
+
+          &:nth-child(3) {
+            @include url;
+            background-size: 70%;
+            background-image: url("../img/naver.png");
+          }
+
+          &:nth-child(4) {
+            margin-right: 0;
+            @include url;
+            background-size: 70%;
+            background-image: url("../img/google.png");
+          }
+
+          a {
+            display: block;
+            width: 100%;
+            height: 100%;
+          }
+
+          span {
+            @include hidden;
+          }
+        }
+
+        // li
+      }
+
+      // ul
+    }
+
+    // .textBox
+    @keyframes mousewheel {
+      0% {
+        opacity: 1;
+        top: 0;
+      }
+
+      100% {
+        opacity: 0;
+        top: 50%;
+      }
+    }
+
+    .mouse {
+      position: absolute;
+      bottom: 4%;
+      left: 0;
+      right: 0;
+      margin: auto;
+      width: 25px;
+      height: 45px;
+      border: 2px solid #fff;
+      border-radius: 15px;
+      box-sizing: border-box;
+
+      .wheel {
+        position: absolute;
+        width: 4px;
+        height: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        text-indent: -2000px;
+        background-color: #fff;
+        border-radius: 10px;
+        animation: mousewheel 1s linear infinite
+      }
+    }
+  }
+
+  // #banner
+
+
+  #about {
+    width: 100%;
+    height: 700px;
+    margin: auto;
+    color: #fff;
+    line-height: 2;
+    padding-top: 1rem;
+    box-sizing: border-box;
+
+    h2 {
+      font-size: 1.3rem;
+      margin-bottom: 2rem;
+    }
+
+    p {
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+
+    // p
+
+
+    .profile {
+      position: relative;
+      top: 0;
+      float: left;
+      width: 1350px;
+      height: auto;
+      transition: all 1000ms ease;
+      opacity: 0;
+
+      .motion_dell {
+        position: absolute;
+        bottom: 5%;
+        left: 32.5%;
+        width: 150px;
+        height: 40px;
+
+        a {
+          display: block;
+          width: 100%;
+          height: 100%;
+          text-align: center;
+          line-height: 40px;
+          background-color: transparent;
+          font-weight: bold;
+          border-radius: 3px;
+          color: #fff;
+        }
+
+        // a
+
+        span {
+          position: absolute;
+          z-index: 10;
+          display: block;
+          $w: 1px;
+          background-color: #fff;
+
+          &.bottom {
+            width: 150px;
+            height: $w;
+            bottom: 0;
+            left: 0;
+            background-color: transparent;
+
+            &:before {
+              content: " ";
+              display: block;
+              width: 0;
+              height: $w;
+              position: absolute;
+              right: 50%;
+              background-color: #fff;
+            }
+
+            &:after {
+              content: " ";
+              display: block;
+              width: 0;
+              height: $w;
+              position: absolute;
+              right: 0;
+              bottom: 0;
+              background-color: #fff;
+            }
+          }
+
+          // &.bottom
+          &.left {
+            width: $w;
+            height: 0;
+            bottom: 0;
+            left: 0;
+          }
+
+          &.top {
+            width: 0;
+            height: $w;
+            top: 0;
+            left: 0;
+          }
+
+          &.right {
+            width: $w;
+            height: 0;
+            top: 0;
+            right: 0;
+          }
+        }
+
+        // span
+        &.active {
+          .bottom:before {
+            width: 50%;
+            transition: all 0.2s ease;
+          }
+
+          .bottom::after {
+            width: 50%;
+            transition: all 0.2s ease 0.7s;
+          }
+
+          .left {
+            height: 100%;
+            transition: all 0.2s ease 0.1s;
+          }
+
+          .top {
+            width: 100%;
+            transition: all 0.2s ease 0.3s;
+          }
+
+          .right {
+            height: 100%;
+            transition: all 0.2s ease 0.5s;
+          }
+        }
+
+        // &.active
+      }
+
+      // motion_dell
+
+      .motion_tesla {
+        position: absolute;
+        bottom: 5%;
+        left: 45%;
+        width: 150px;
+        height: 40px;
+
+        a {
+          display: block;
+          width: 100%;
+          height: 100%;
+          text-align: center;
+          line-height: 40px;
+          background-color: transparent;
+          font-weight: bold;
+          border-radius: 3px;
+          color: #fff;
+        }
+
+        // a
+
+        span {
+          position: absolute;
+          z-index: 10;
+          display: block;
+          $w: 1px;
+          background-color: #fff;
+
+          &.bottom {
+            width: 150px;
+            height: $w;
+            bottom: 0;
+            left: 0;
+            background-color: transparent;
+
+            &:before {
+              content: " ";
+              display: block;
+              width: 0;
+              height: $w;
+              position: absolute;
+              right: 50%;
+              background-color: #fff;
+            }
+
+            &:after {
+              content: " ";
+              display: block;
+              width: 0;
+              height: $w;
+              position: absolute;
+              right: 0;
+              bottom: 0;
+              background-color: #fff;
+            }
+          }
+
+          // &.bottom
+          &.left {
+            width: $w;
+            height: 0;
+            bottom: 0;
+            left: 0;
+          }
+
+          &.top {
+            width: 0;
+            height: $w;
+            top: 0;
+            left: 0;
+          }
+
+          &.right {
+            width: $w;
+            height: 0;
+            top: 0;
+            right: 0;
+          }
+        }
+
+        // span
+        &.active {
+          .bottom:before {
+            width: 50%;
+            transition: all 0.2s ease;
+          }
+
+          .bottom::after {
+            width: 50%;
+            transition: all 0.2s ease 0.7s;
+          }
+
+          .left {
+            height: 100%;
+            transition: all 0.2s ease 0.1s;
+          }
+
+          .top {
+            width: 100%;
+            transition: all 0.2s ease 0.3s;
+          }
+
+          .right {
+            height: 100%;
+            transition: all 0.2s ease 0.5s;
+          }
+        }
+
+        // &.active
+      }
+
+      // motion_tesla
+
+      .motion_nivea {
+        position: absolute;
+        bottom: 5%;
+        left: 57%;
+        width: 150px;
+        height: 40px;
+
+        a {
+          display: block;
+          width: 100%;
+          height: 100%;
+          text-align: center;
+          line-height: 40px;
+          background-color: transparent;
+          font-weight: bold;
+          border-radius: 3px;
+          color: #fff;
+        }
+
+        // a
+
+        span {
+          position: absolute;
+          z-index: 10;
+          display: block;
+          $w: 1px;
+          background-color: #fff;
+
+          &.bottom {
+            width: 150px;
+            height: $w;
+            bottom: 0;
+            left: 0;
+            background-color: transparent;
+
+            &:before {
+              content: " ";
+              display: block;
+              width: 0;
+              height: $w;
+              position: absolute;
+              right: 50%;
+              background-color: #fff;
+            }
+
+            &:after {
+              content: " ";
+              display: block;
+              width: 0;
+              height: $w;
+              position: absolute;
+              right: 0;
+              bottom: 0;
+              background-color: #fff;
+            }
+          }
+
+          // &.bottom
+          &.left {
+            width: $w;
+            height: 0;
+            bottom: 0;
+            left: 0;
+          }
+
+          &.top {
+            width: 0;
+            height: $w;
+            top: 0;
+            left: 0;
+          }
+
+          &.right {
+            width: $w;
+            height: 0;
+            top: 0;
+            right: 0;
+          }
+        }
+
+        // span
+        &.active {
+          .bottom:before {
+            width: 50%;
+            transition: all 0.2s ease;
+          }
+
+          .bottom::after {
+            width: 50%;
+            transition: all 0.2s ease 0.7s;
+          }
+
+          .left {
+            height: 100%;
+            transition: all 0.2s ease 0.1s;
+          }
+
+          .top {
+            width: 100%;
+            transition: all 0.2s ease 0.3s;
+          }
+
+          .right {
+            height: 100%;
+            transition: all 0.2s ease 0.5s;
+          }
+        }
+
+        // &.active
+      }
+
+      // motion_nivea
+
+      .img {
+        float: left;
+        margin-right: 300px;
+        margin-top: 120px;
+        transform: translateX(100%);
+        width: 140px;
+        height: 180px;
+        background-color: #fff;
+        @include url;
+        background-size: cover;
+        background-position: 50% 20%;
+        background-image: url("../img/chojaeyeong.png");
+        box-shadow: 0 3px 70px 5px #3c3c97;
+      }
+
+      .aboutme {
+        float: left;
+        margin-top: 100px;
+        width: 400px;
+        height: 430px;
+      }
+
+      .career {
+        float: left;
+        margin-top: 100px;
+        width: 400px;
+        height: 430px;
+      }
+
+      // career
+    }
+
+    // .profile
+  }
+
+  // #about
+
+  #about .profile.action {
+    opacity: 1;
+  }
+
+
+  #skill {
+    width: 100%;
+    height: 800px;
+  }
+
+  .abtitle {
+    width: 100%;
+    height: 180px;
+    padding-top: 4rem;
+    box-sizing: border-box;
+
+    h2 {
+      margin: auto;
+      font-size: 3rem;
+      line-height: 100px;
+      text-align: center;
+      width: 300px;
+      height: 100px;
+      color: #fff;
+    }
+
+    p {
+      font-size: 0.8rem;
+      color: #fff;
+      text-align: center;
+    }
+  }
+
+  .abBox {
+    width: 1000px;
+    height: 340px;
+    margin: auto;
+    margin-top: 20px;
+    border: 2px solid #ccc;
+  }
+
+  .abProgram {
+    float: left;
+    width: 50%;
+    height: auto;
+    min-height: 500px;
+  }
+
+  .bar {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    color: #fff;
+
+    dl {
+      float: left;
+      width: 90%;
+      height: 60px;
+      transform: translateX(6%);
+      margin-top: 20px;
+
+      dt {
+        float: left;
+        font-weight: bold;
+        width: 100px;
+        height: 50px;
+        line-height: 13px;
+      }
+
+      dd {
+        float: left;
+        height: 20px;
+        margin-bottom: 10px;
+
+        &.narr {
+          width: 50%;
+          font-size: 0.8rem;
+          color: #fff;
+        }
+
+        &.gage {
+          width: 70%;
+          height: 20px;
+
+          >span {
+            float: left;
+            width: 80%;
+            height: 100%;
+            background-color: transparent;
+            border: 1px solid #fff;
+            border-radius: 2px;
+          }
+
+          i {
+            display: block;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.2);
+            border-right: 1px solid #fff;
+            transition: width 1000ms ease;
+          }
+
+          em {
+            float: right;
+            width: 50px;
+            height: 100%;
+            line-height: 20px;
+            font-style: normal;
+          }
+        }
+
+        // &.gage
+      }
+
+      // dd
+    }
+
+    // dl
+  }
+
+  // .bar
+  .abBox i {
+    width: 0;
+  }
+
+  .abBox.active .ps i {
+    width: 90%;
+  }
+
+  .abBox.active .ai i {
+    width: 90%;
+  }
+
+  .abBox.active .id i {
+    width: 70%;
+  }
+
+  .abBox.active .html i {
+    width: 90%;
+  }
+
+
+  .abBox i {
+    width: 0;
+  }
+
+  .abBox.active .css i {
+    width: 90%;
+  }
+
+  .abBox.active .scss i {
+    width: 90%;
+  }
+
+  .abBox.active .js i {
+    width: 80%;
+  }
+
+  .abBox.active .git i {
+    width: 70%;
+  }
+
+
+
+
+
+
+  #product_01 {
+    width: 100%;
+    height: auto;
+    margin-top: 14rem;
+
+    p {
+      display: block;
+      width: 100%;
+      height: 25px;
+      color: #fff;
+    }
+
+    .pfBox {
+      position: relative;
+      width: 1300px;
+      height: 100%;
+      margin: auto;
+
+      a {
+        display: block;
+        margin-bottom: 20px;
+        width: 100%;
+        height: 20px;
+        font-weight: bold;
+        color: #fff;
+      }
+
+      span {
+        font-weight: bold;
+      }
+
+    }
+
+    .pf_dell {
+      position: relative;
+      margin: auto;
+      top: 150px;
+      width: 1000px;
+      height: 300px;
+      margin-top: 10rem;
+      border: 2px solid #fff;
+      border-radius: 3px;
+
+      .img_dell {
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: 59px;
+        margin: auto;
+        width: 240px;
+        height: 140px;
+        transition: all .5s ease;
+        background-color: #333;
+        overflow: hidden;
+
         /*          @include url;
                  background-size:cover;
                  background-image: url("../../img/main_pull.png");
                   */
-                  img {position: absolute;z-index:100; top:0; left:0; width: 240px; height:auto; transition:top 2s ease;}
-      } // .img_dell
-      &:hover img{top:-715px;}
-    
-      .moniter {position: relative; z-index:100; right:0; left:0; top:50px; margin:auto; width:250px; height:200px; overflow:hidden;
+        img {
+          position: absolute;
+          z-index: 100;
+          top: 0;
+          left: 0;
+          width: 240px;
+          height: auto;
+          transition: top 2s ease;
+        }
+      }
+
+      // .img_dell
+      &:hover img {
+        top: -715px;
+      }
+
+      .moniter {
+        position: relative;
+        z-index: 100;
+        right: 0;
+        left: 0;
+        top: 50px;
+        margin: auto;
+        width: 250px;
+        height: 200px;
+        overflow: hidden;
         @include url;
-        background-image: url("../img/mac.png");}
-    
-      .product_text {position: absolute; bottom:5%; left:15%; width: 100%; height:auto; 
-        &:before {content:" "; display: block; margin-bottom:40px; width:425px; height:1px; background-color: #fff;}
-    
-        .site {float:left; width: 120px; height:auto; 
-          p {display: block; margin-left:10px; width:100%; height: 20px; font-weight:bold; color:#fff;}
-        } // .site
-    
-        .site_name {margin-left:150px; width: 300px; height:auto; 
-          p {margin-bottom:22px; width:100%; height:20px; font-weight:bold;}
-         
-       } // .site_name
-      } // .product_text
-     } // .pf_dell
-    
-     .pf_tesla {float:left; position: relative; width: 500px; height: 300px; margin-top:10rem;
-      border:2px solid #fff; border-radius:3px; margin-left:200px;
-      .img_tesla {position: absolute; right:0; left:0; top:62px; margin:auto; width: 360px; height: 230px; background-color: #333; overflow: hidden;
-       img {position: absolute; top:0; left:0; width: 370px;max-width:370px; height:auto; transition:top 2s ease;}
-      } // .img_dell
-      &:hover img {top:-1108px;}
-    
-      .moniter {position: absolute; right:0; left:0; top:50px; margin:auto; width: 400px; height: 300px; 
+        background-image: url("../img/mac.png");
+      }
+
+      .product_text {
+        position: absolute;
+        bottom: 5%;
+        left: 15%;
+        width: 100%;
+        height: auto;
+
+        &:before {
+          content: " ";
+          display: block;
+          margin-bottom: 40px;
+          width: 425px;
+          height: 1px;
+          background-color: #fff;
+        }
+
+        .site {
+          float: left;
+          width: 120px;
+          height: auto;
+
+          p {
+            display: block;
+            margin-left: 10px;
+            width: 100%;
+            height: 20px;
+            font-weight: bold;
+            color: #fff;
+          }
+        }
+
+        // .site
+
+        .site_name {
+          margin-left: 150px;
+          width: 300px;
+          height: auto;
+
+          p {
+            margin-bottom: 22px;
+            width: 100%;
+            height: 20px;
+            font-weight: bold;
+          }
+
+        }
+
+        // .site_name
+      }
+
+      // .product_text
+    }
+
+    // .pf_dell
+
+    .pf_tesla {
+      float: left;
+      position: relative;
+      width: 500px;
+      height: 300px;
+      margin-top: 10rem;
+      border: 2px solid #fff;
+      border-radius: 3px;
+      margin-left: 200px;
+
+      .img_tesla {
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: 62px;
+        margin: auto;
+        width: 360px;
+        height: 230px;
+        background-color: #333;
+        overflow: hidden;
+
+        img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 370px;
+          max-width: 370px;
+          height: auto;
+          transition: top 2s ease;
+        }
+      }
+
+      // .img_dell
+      &:hover img {
+        top: -1108px;
+      }
+
+      .moniter {
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: 50px;
+        margin: auto;
+        width: 400px;
+        height: 300px;
         @include url;
-        background-image: url("../img/mac.png");}
-      .product_text {position: absolute; bottom:5%; left:15%; width: 100%; height:auto; 
-        &:before {content:" "; display: block; margin-bottom:40px; width:425px; height:1px; background-color: #fff;}
-    
-        .site {float:left; width: 120px; height:auto;
-          p {display: block; margin-left:10px; width:100%; height: 20px; font-weight:bold;}
-        } // .site
-        .site_name {margin-left:150px; width: 380px; height:auto;
-          p {margin-bottom:22px; width:100%; height:20px; font-weight:bold;}
-       } // .site_name
-      } // .product_text 깃 웹사이트 사이트맵 pdf 
-     } // .pf_tesla
-    } // #product
-    
-    
-    #footBox {width: 100%; height:300px; margin-top:15rem;
-      a {display: block; width: 100%; height: 100%; font-weight:bold; color:#fff;}
-    .loadBox {width:520px; height:auto; margin:auto;  color:#fff; text-align: center; line-height:50px;
-      div {position: relative; width: 100%; height: 100%;
-        &:before {content:" "; position: absolute; right:0; display: block; width: 1px; height: 20px; 
-          background-color: #fff; transform: translateY(75%);}
-        &:nth-child(4) {&:before {display: none;}}
-        } // .div
-     .git {float:left;  width: 120px; height: 50px;}
-     .web {float:left; width: 120px; height: 50px;}
-     .site_map {float:left; width: 120px; height: 50px;}
-     .pdf {float:left; margin-left:20px; width: 120px; height: 50px;}
-     } // .loadBox
-    
-     .pf_info {width: 980px; height:auto; margin:auto;
-      p {text-align: center; line-height:1.6; margin-top:40px; color:#fff;}
-      }// pf.info
-     } // #footBox
-    
-    } // media screen
+        background-image: url("../img/mac.png");
+      }
+
+      .product_text {
+        position: absolute;
+        bottom: 5%;
+        left: 15%;
+        width: 100%;
+        height: auto;
+
+        &:before {
+          content: " ";
+          display: block;
+          margin-bottom: 40px;
+          width: 425px;
+          height: 1px;
+          background-color: #fff;
+        }
+
+        .site {
+          float: left;
+          width: 120px;
+          height: auto;
+
+          p {
+            display: block;
+            margin-left: 10px;
+            width: 100%;
+            height: 20px;
+            font-weight: bold;
+          }
+        }
+
+        // .site
+        .site_name {
+          margin-left: 150px;
+          width: 380px;
+          height: auto;
+
+          p {
+            margin-bottom: 22px;
+            width: 100%;
+            height: 20px;
+            font-weight: bold;
+          }
+        }
+
+        // .site_name
+      }
+
+      // .product_text 깃 웹사이트 사이트맵 pdf 
+    }
+
+    // .pf_tesla
+  }
+
+  // #product
+
+
+  #footBox {
+    width: 100%;
+    height: 300px;
+    margin-top: 15rem;
+
+    a {
+      display: block;
+      width: 100%;
+      height: 100%;
+      font-weight: bold;
+      color: #fff;
+    }
+
+    .loadBox {
+      width: 520px;
+      height: auto;
+      margin: auto;
+      color: #fff;
+      text-align: center;
+      line-height: 50px;
+
+      div {
+        position: relative;
+        width: 100%;
+        height: 100%;
+
+        &:before {
+          content: " ";
+          position: absolute;
+          right: 0;
+          display: block;
+          width: 1px;
+          height: 20px;
+          background-color: #fff;
+          transform: translateY(75%);
+        }
+
+        &:nth-child(4) {
+          &:before {
+            display: none;
+          }
+        }
+      }
+
+      // .div
+      .git {
+        float: left;
+        width: 120px;
+        height: 50px;
+      }
+
+      .web {
+        float: left;
+        width: 120px;
+        height: 50px;
+      }
+
+      .site_map {
+        float: left;
+        width: 120px;
+        height: 50px;
+      }
+
+      .pdf {
+        float: left;
+        margin-left: 20px;
+        width: 120px;
+        height: 50px;
+      }
+    }
+
+    // .loadBox
+
+    .pf_info {
+      width: 980px;
+      height: auto;
+      margin: auto;
+
+      p {
+        text-align: center;
+        line-height: 1.6;
+        margin-top: 40px;
+        color: #fff;
+      }
+    }
+
+    // pf.info
+  }
+
+  // #footBox
+
+}
+
+// media screen

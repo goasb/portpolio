@@ -1,294 +1,1251 @@
-
 @media screen and (min-width:1280px) and (max-width:1919px) {
 
-  a:focus{outline:0;}
+  a:focus {
+    outline: 0;
+  }
 
-    #wrap {width: 100%; height:auto; @include url; background-size:cover; background-image: url("../img/wrap.svg"); max-width:1280px;}
-    .scroll{padding-top:100px;}
-    #headBox {position: fixed; z-index:10; width:100%; height: 70px; background-color:rgba(0,0,0,0.2); max-width:1280px;;
-    h1 {position: absolute; left:5%; width: 100px; height:100%;
-        @include url; 
-        background-size:50%; 
-        background-image: url("../img/logo_03_white.png");
-        
-    a {display: block; width: 100%; height: 100%;}}
-    
-    .gnb {position: absolute; right:5%; width: 700px; height: 100%; 
-     ul {width: 100%; height: 100%; 
-      li {float:left; margin-left:30px; width: 100px; height: 100%; 
-          font-weight:bold; text-align:center; line-height:70px; 
-      &:nth-child(1) {margin-left:0;}
-       a {display: block; width: 100%; height: 100%; color:#fff;}
-       } // li
-      } // ul
-     } // .gnb
-    } // #headBox
-    
-    #banner {width: 100%; height:940px; background-size:cover; background-image: url("../img/gradient.svg");
-      
-           
-     .textBox {position: absolute; @include margin; width: 800px; height:300px;
-      h2 {font-size:3rem; color:$white; text-align: center; line-height:1.1;}
-      p {font-size:0.8rem; font-weight:bold; text-align: center; color:#fff; padding-top:30px; line-height:1.7;}
-      ul {position: absolute; margin:auto; left:0; right:0; width: 320px; height: auto;
-       li {float:left; margin-right:40px; width: 50px; height: 50px; margin-top:40px;
-       &:nth-child(1) {@include url; background-size:60%; background-image:url("../img/facebook.png");}
-       &:nth-child(2) {@include url; background-size:60%; background-image:url("../img/instar.png");}
-       &:nth-child(3) {@include url; background-size:60%; background-image:url("../img/naver.png");}
-       &:nth-child(4) {margin-right:0; @include url; background-size:60%; background-image:url("../img/google.png");}
-        a {display: block; width: 100%; height: 100%;}
-        span {@include hidden;}
-       } // li
-      } // ul
-     } // .textBox
-     @keyframes mousewheel {
-         0% {opacity:1; top:0;}
-         100% {opacity:0; top:50%;}
-     }
-     .mouse {position: absolute; bottom:4%; left:0; right:0; margin:auto; width: 25px; height:45px; 
-        border:2px solid #fff; border-radius:15px; box-sizing:border-box;
-        .wheel {position: absolute; width: 4px; height: 10px; left:50%; transform:translateX(-50%);
-                text-indent:-2000px; background-color: #fff; border-radius:10px; 
-                animation:mousewheel 1s linear infinite}
-     }
-    } // #banner
-    
-    
-    #about {width: 100%; height:800px; margin:auto; margin-top:15rem; color:#fff; line-height:2;
-     h2 {font-size:1.5rem; margin-bottom:2rem;}
-     p {font-size: 0.8rem; font-weight:500;} // p
-    
-    
-     .profile {position: relative; float:left; margin-left:50px; width:100%; height:auto; margin-top:150px;
-      transition:all 1.5s ease; opacity:0; 
-    
-      .motion_dell {position: absolute; bottom:5%; left:35%; width:150px; height:40px; 
-        a {display: block; width:100%; height:100%; text-align: center; line-height:40px; 
-          background-color: transparent; font-weight:bold; border-radius:3px; color:#fff;} // a
-          
-          span {position: absolute; z-index:10; display: block; $w:1px; background-color:#fff;
-           &.bottom {width: 150px; height:$w; bottom:0; left:0; background-color: transparent;
-          &:before {content:" "; display: block; width: 0; height:$w; position: absolute; right:50%;
-                    background-color: #fff; }
-          &:after {content:" "; display: block; width: 0; height:$w; position: absolute; right:0; bottom:0;
-                   background-color: #fff; } 
-            } // &.bottom
-            &.left {width:$w; height: 0; bottom:0; left:0;}
-            &.top {width:0; height:$w; top:0; left:0;}
-            &.right {width:$w; height: 0; top:0; right:0;}
-          } // span
-          &.active {
-            .bottom:before {width: 50%; transition:all 0.2s ease;}
-            .bottom::after {width: 50%; transition:all 0.2s ease 0.7s;}
-            .left {height: 100%; transition:all 0.2s ease 0.1s;}
-            .top {width: 100%; transition:all 0.2s ease 0.3s;}
-            .right {height: 100%; transition:all 0.2s ease 0.5s;}
-          } // &.active
-      } // motion_dell
-    
-      .motion_tesla {position: absolute; bottom:5%; left:50%; width:150px; height:40px; 
-        a {display: block; width:100%; height:100%; text-align: center; line-height:40px; 
-          background-color: transparent; font-weight:bold; border-radius:3px; color:#fff;} // a
-          
-          span {position: absolute; z-index:10; display: block; $w:1px; background-color:#fff;
-           &.bottom {width: 150px; height:$w; bottom:0; left:0; background-color: transparent;
-          &:before {content:" "; display: block; width: 0; height:$w; position: absolute; right:50%;
-                    background-color: #fff; }
-          &:after {content:" "; display: block; width: 0; height:$w; position: absolute; right:0; bottom:0;
-                   background-color: #fff; } 
-            } // &.bottom
-            &.left {width:$w; height: 0; bottom:0; left:0;}
-            &.top {width:0; height:$w; top:0; left:0;}
-            &.right {width:$w; height: 0; top:0; right:0;}
-          } // span
-          &.active {
-            .bottom:before {width: 50%; transition:all 0.2s ease;}
-            .bottom::after {width: 50%; transition:all 0.2s ease 0.7s;}
-            .left {height: 100%; transition:all 0.2s ease 0.1s;}
-            .top {width: 100%; transition:all 0.2s ease 0.3s;}
-            .right {height: 100%; transition:all 0.2s ease 0.5s;}
-          } // &.active
-      } // motion_tesla
+  #wrap {
+    width: 100%;
+    height: auto;
+    @include url;
+    background-size: cover;
+    background-image: url("../img/wrap.svg");
+    max-width: 1280px;
+  }
 
-      .motion_nivea {position: absolute; bottom:5%; left:63%; width:150px; height:40px; 
-        a {display: block; width:100%; height:100%; text-align: center; line-height:40px; 
-          background-color: transparent; font-weight:bold; border-radius:3px; color:#fff;} // a
-          
-          span {position: absolute; z-index:10; display: block; $w:1px; background-color:#fff;
-           &.bottom {width: 150px; height:$w; bottom:0; left:0; background-color: transparent;
-          &:before {content:" "; display: block; width: 0; height:$w; position: absolute; right:50%;
-                    background-color: #fff; }
-          &:after {content:" "; display: block; width: 0; height:$w; position: absolute; right:0; bottom:0;
-                   background-color: #fff; } 
-            } // &.bottom
-            &.left {width:$w; height: 0; bottom:0; left:0;}
-            &.top {width:0; height:$w; top:0; left:0;}
-            &.right {width:$w; height: 0; top:0; right:0;}
-          } // span
-          &.active {
-            .bottom:before {width: 50%; transition:all 0.2s ease;}
-            .bottom::after {width: 50%; transition:all 0.2s ease 0.7s;}
-            .left {height: 100%; transition:all 0.2s ease 0.1s;}
-            .top {width: 100%; transition:all 0.2s ease 0.3s;}
-            .right {height: 100%; transition:all 0.2s ease 0.5s;}
-          } // &.active
-      } // motion_tesla
-    
-      .img {float:left; margin-right:300px; margin-top:20px; transform: translateX(60%); width: 140px; height: 190px; background-color: #fff;
-     @include url; background-size:cover; 
-     background-position:50% 20%; 
-     background-image: url("../img/chojaeyeong.png"); 
-     box-shadow: 0 3px 70px 5px #3c3c97;}
-      
-     .aboutme {float:left; width: 300px; height:430px;}
-     .career  {float:left; width: 400px; height:430px;} // career
-     } // .profile
-    } // #about
-    
-    #about .profile.action{margin-top:-5px; transition:all 1.5s ease; opacity:1;}
-        
-    
-    #skill {width: 100%; height: 800px; }
-    .abtitle {width: 100%; height:80px; margin-bottom:20px;
-    h2 {margin:auto; font-size:2.5rem; line-height:1.5; text-align: center; color:#fff;}
-     p {font-size:0.8rem; color:#fff; text-align: center;}
-    } // .abtitle
-    .abBox {width:1000px; height:340px; margin:auto; border:2px solid #ccc;}
-    .abProgram{float:left; width:50%; height:auto; min-height:500px; }
-    
-    .bar{width: 100%; height: auto; margin-bottom: 10px; color:#fff; 
-      dl{float:left; width: 90%; height:60px; transform: translateX(6%); margin-top:20px; 
-       dt{float:left; font-weight:bold; font-size:0.8rem; width:100px; height:50px; line-height:13px;}
-       dd{float:left; height: 20px; margin-bottom: 10px; 
-         &.narr{width:50%; font-size: 0.8rem;  color:#fff;}
-         &.gage{width:70%; height:20px; 
-           >span{float:left; width:80%; height: 100%; background-color:transparent; border:1px solid #fff;
-          border-radius:2px;}
-           i{display: block; height: 100%; background-color:rgba(255,255,255,0.2); border-right:1px solid #fff;
-                        transition:width 1000ms ease;}
-             em{float:right; width:50px; height: 100%; line-height:20px; font-style: normal; }
-       } // &.gage
-      } // dd
-     } // dl
-    } // .bar
-    .abBox  i{width: 0;}
-    .abBox.active .ps  i{width: 90%;}
-    .abBox.active .ai i{width: 90%;}
-    .abBox.active .id  i{width: 70%;}
-    .abBox.active .html  i{width:90%;}
-    
-    
-    .abBox  i{width: 0;}
-    .abBox.active .css  i{width: 90%;}
-    .abBox.active .scss  i{width: 90%;}
-    .abBox.active .js  i{width: 80%;}
-    .abBox.active .git  i{width: 70%;}
-    
-    
-    
-    
-    
-    
-    #product_01 {width: 100%; height:auto; margin-top:14rem;
-      p {display: block; font-size:0.9rem; width:100%; height: 25px; color:#fff;}
-     .pfBox {position: relative; width:100%; height:auto; margin:auto; padding-left:100px; box-sizing:border-box;
-      a {display: block; font-size:0.9rem; margin-bottom:20px; width: 100%; height:20px; font-weight:bold; color:#fff;}
-      span {font-weight:bold;}
-     
+  .scroll {
+    padding-top: 100px;
+  }
+
+  #headBox {
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    height: 70px;
+    background-color: rgba(0, 0, 0, 0.2);
+    max-width: 1280px;
+    ;
+
+    h1 {
+      position: absolute;
+      left: 5%;
+      width: 100px;
+      height: 100%;
+      @include url;
+      background-size: 50%;
+      background-image: url("../img/logo_03_white.png");
+
+      a {
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
     }
-    .pf_dell {position: relative; float:left; left:7%; width: 400px; height:450px; 
-      border:2px solid #fff; border-radius:3px;
-.img_dell {position: absolute; right:0; left:0; top:33px; margin:auto; width:240px; height:150px; 
-background-color: #333; overflow: hidden;
-img {position: absolute; top:0; left:0; width:240px; height:auto; transition:top 2s ease;}
-} // .img_dell
-&:hover img {top:-410px;}
 
-.moniter {position: absolute; right:0; left:0; top:-100px; margin:auto; width:250px; height:100%; 
-@include url;
-background-image: url("../img/mac.png");}
-.product_text {position: absolute; bottom:-2%; width: 100%; height:auto; 
-.site {float:left; margin-left:25px; width: 120px; height:auto;
-p {font-size:0.8rem; margin-left:10px; width:100%; height: 20px; font-weight:bold;}
-} // .site
-.site_name {margin-left:150px; width: 380px; height:auto;
-p {font-size: 0.8rem; margin-bottom:22px; width:100%; height:20px; font-weight:bold;}
-a {display: block; font-size: 0.8rem;}
-} // .site_name
-} // .product_text
-} // .pf_dell
-    
-     .pf_tesla {position: relative; margin:auto; left:17%; width: 400px; height:450px; 
-      border:2px solid #fff; border-radius:3px;
-.img_tesla {position: absolute; right:0; left:0; top:33px; margin:auto; width:240px; height:150px; 
-background-color: #333; overflow: hidden;
-img {position: absolute; top:0; left:0; width:240px; height:auto; transition:top 2s ease;}
-} // .img_dell
-&:hover img {top:-715px;}
+    .gnb {
+      position: absolute;
+      right: 5%;
+      width: 700px;
+      height: 100%;
 
-.moniter {position: absolute; right:0; left:0; top:-100px; margin:auto; width:250px; height:100%; 
-@include url;
-background-image: url("../img/mac.png");}
-.product_text {position: absolute; bottom:-2%; width: 100%; height:auto; 
-.site {float:left; margin-left:25px; width: 120px; height:auto;
-p {font-size:0.8rem; margin-left:10px; width:100%; height: 20px; font-weight:bold;}
-} // .site
-.site_name {margin-left:150px; width: 380px; height:auto;
-p {font-size: 0.8rem; margin-bottom:22px; width:100%; height:20px; font-weight:bold;}
-a {display: block; font-size: 0.8rem;}
-} // .site_name
-} // .product_text
-} // .pf_tesla
-    } // #product_01
-  
+      ul {
+        width: 100%;
+        height: 100%;
 
-#product_02 {position: relative; width: 100%; height:auto;
-  p {display: block; font-size:0.9rem; width:100%; height: 25px; color:#fff;}
- .pfBox_02 {position: absolute; width:100%; height:auto; margin:auto; padding-left:100px; box-sizing:border-box;
-  a {display: block; font-size:0.9rem; margin-bottom:20px; width: 100%; height:20px; font-weight:bold; color:#fff;}
-  span {font-weight:bold;}
-     .pf_nivea {position: absolute; left:14%; width: 400px; height:450px; 
-                border:2px solid #fff; border-radius:3px;
-      .img_nivea {position: absolute; right:0; left:0; top:33px; margin:auto; width:240px; height:150px; 
-        background-color: #333; overflow: hidden;
-       img {position: absolute; top:0; left:0; width:240px; height:auto; transition:top 2s ease;}
-      } // .img_nivea
-      &:hover img {top:-220px;}
-    
-      .moniter {position: absolute; right:0; left:0; top:-100px; margin:auto; width:250px; height:100%; 
+        li {
+          float: left;
+          margin-left: 30px;
+          width: 100px;
+          height: 100%;
+          font-weight: bold;
+          text-align: center;
+          line-height: 70px;
+
+          &:nth-child(1) {
+            margin-left: 0;
+          }
+
+          a {
+            display: block;
+            width: 100%;
+            height: 100%;
+            color: #fff;
+          }
+        }
+
+        // li
+      }
+
+      // ul
+    }
+
+    // .gnb
+  }
+
+  // #headBox
+
+  #banner {
+    width: 100%;
+    height: 940px;
+    background-size: cover;
+    background-image: url("../img/gradient.svg");
+
+
+    .textBox {
+      position: absolute;
+      @include margin;
+      width: 800px;
+      height: 300px;
+
+      h2 {
+        font-size: 3rem;
+        color: $white;
+        text-align: center;
+        line-height: 1.1;
+      }
+
+      p {
+        font-size: 0.8rem;
+        font-weight: bold;
+        text-align: center;
+        color: #fff;
+        padding-top: 30px;
+        line-height: 1.7;
+      }
+
+      ul {
+        position: absolute;
+        margin: auto;
+        left: 0;
+        right: 0;
+        width: 320px;
+        height: auto;
+
+        li {
+          float: left;
+          margin-right: 40px;
+          width: 50px;
+          height: 50px;
+          margin-top: 40px;
+
+          &:nth-child(1) {
+            @include url;
+            background-size: 60%;
+            background-image: url("../img/facebook.png");
+          }
+
+          &:nth-child(2) {
+            @include url;
+            background-size: 60%;
+            background-image: url("../img/instar.png");
+          }
+
+          &:nth-child(3) {
+            @include url;
+            background-size: 60%;
+            background-image: url("../img/naver.png");
+          }
+
+          &:nth-child(4) {
+            margin-right: 0;
+            @include url;
+            background-size: 60%;
+            background-image: url("../img/google.png");
+          }
+
+          a {
+            display: block;
+            width: 100%;
+            height: 100%;
+          }
+
+          span {
+            @include hidden;
+          }
+        }
+
+        // li
+      }
+
+      // ul
+    }
+
+    // .textBox
+    @keyframes mousewheel {
+      0% {
+        opacity: 1;
+        top: 0;
+      }
+
+      100% {
+        opacity: 0;
+        top: 50%;
+      }
+    }
+
+    .mouse {
+      position: absolute;
+      bottom: 4%;
+      left: 0;
+      right: 0;
+      margin: auto;
+      width: 25px;
+      height: 45px;
+      border: 2px solid #fff;
+      border-radius: 15px;
+      box-sizing: border-box;
+
+      .wheel {
+        position: absolute;
+        width: 4px;
+        height: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        text-indent: -2000px;
+        background-color: #fff;
+        border-radius: 10px;
+        animation: mousewheel 1s linear infinite
+      }
+    }
+  }
+
+  // #banner
+
+
+  #about {
+    width: 100%;
+    height: 800px;
+    margin: auto;
+    margin-top: 15rem;
+    color: #fff;
+    line-height: 2;
+
+    h2 {
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    p {
+      font-size: 0.8rem;
+      font-weight: 500;
+    }
+
+    // p
+
+
+    .profile {
+      position: relative;
+      float: left;
+      margin-left: 50px;
+      width: 100%;
+      height: auto;
+      margin-top: 150px;
+      transition: all 1.5s ease;
+      opacity: 0;
+
+      .motion_dell {
+        position: absolute;
+        bottom: 5%;
+        left: 35%;
+        width: 150px;
+        height: 40px;
+
+        a {
+          display: block;
+          width: 100%;
+          height: 100%;
+          text-align: center;
+          line-height: 40px;
+          background-color: transparent;
+          font-weight: bold;
+          border-radius: 3px;
+          color: #fff;
+        }
+
+        // a
+
+        span {
+          position: absolute;
+          z-index: 10;
+          display: block;
+          $w: 1px;
+          background-color: #fff;
+
+          &.bottom {
+            width: 150px;
+            height: $w;
+            bottom: 0;
+            left: 0;
+            background-color: transparent;
+
+            &:before {
+              content: " ";
+              display: block;
+              width: 0;
+              height: $w;
+              position: absolute;
+              right: 50%;
+              background-color: #fff;
+            }
+
+            &:after {
+              content: " ";
+              display: block;
+              width: 0;
+              height: $w;
+              position: absolute;
+              right: 0;
+              bottom: 0;
+              background-color: #fff;
+            }
+          }
+
+          // &.bottom
+          &.left {
+            width: $w;
+            height: 0;
+            bottom: 0;
+            left: 0;
+          }
+
+          &.top {
+            width: 0;
+            height: $w;
+            top: 0;
+            left: 0;
+          }
+
+          &.right {
+            width: $w;
+            height: 0;
+            top: 0;
+            right: 0;
+          }
+        }
+
+        // span
+        &.active {
+          .bottom:before {
+            width: 50%;
+            transition: all 0.2s ease;
+          }
+
+          .bottom::after {
+            width: 50%;
+            transition: all 0.2s ease 0.7s;
+          }
+
+          .left {
+            height: 100%;
+            transition: all 0.2s ease 0.1s;
+          }
+
+          .top {
+            width: 100%;
+            transition: all 0.2s ease 0.3s;
+          }
+
+          .right {
+            height: 100%;
+            transition: all 0.2s ease 0.5s;
+          }
+        }
+
+        // &.active
+      }
+
+      // motion_dell
+
+      .motion_tesla {
+        position: absolute;
+        bottom: 5%;
+        left: 50%;
+        width: 150px;
+        height: 40px;
+
+        a {
+          display: block;
+          width: 100%;
+          height: 100%;
+          text-align: center;
+          line-height: 40px;
+          background-color: transparent;
+          font-weight: bold;
+          border-radius: 3px;
+          color: #fff;
+        }
+
+        // a
+
+        span {
+          position: absolute;
+          z-index: 10;
+          display: block;
+          $w: 1px;
+          background-color: #fff;
+
+          &.bottom {
+            width: 150px;
+            height: $w;
+            bottom: 0;
+            left: 0;
+            background-color: transparent;
+
+            &:before {
+              content: " ";
+              display: block;
+              width: 0;
+              height: $w;
+              position: absolute;
+              right: 50%;
+              background-color: #fff;
+            }
+
+            &:after {
+              content: " ";
+              display: block;
+              width: 0;
+              height: $w;
+              position: absolute;
+              right: 0;
+              bottom: 0;
+              background-color: #fff;
+            }
+          }
+
+          // &.bottom
+          &.left {
+            width: $w;
+            height: 0;
+            bottom: 0;
+            left: 0;
+          }
+
+          &.top {
+            width: 0;
+            height: $w;
+            top: 0;
+            left: 0;
+          }
+
+          &.right {
+            width: $w;
+            height: 0;
+            top: 0;
+            right: 0;
+          }
+        }
+
+        // span
+        &.active {
+          .bottom:before {
+            width: 50%;
+            transition: all 0.2s ease;
+          }
+
+          .bottom::after {
+            width: 50%;
+            transition: all 0.2s ease 0.7s;
+          }
+
+          .left {
+            height: 100%;
+            transition: all 0.2s ease 0.1s;
+          }
+
+          .top {
+            width: 100%;
+            transition: all 0.2s ease 0.3s;
+          }
+
+          .right {
+            height: 100%;
+            transition: all 0.2s ease 0.5s;
+          }
+        }
+
+        // &.active
+      }
+
+      // motion_tesla
+
+      .motion_nivea {
+        position: absolute;
+        bottom: 5%;
+        left: 63%;
+        width: 150px;
+        height: 40px;
+
+        a {
+          display: block;
+          width: 100%;
+          height: 100%;
+          text-align: center;
+          line-height: 40px;
+          background-color: transparent;
+          font-weight: bold;
+          border-radius: 3px;
+          color: #fff;
+        }
+
+        // a
+
+        span {
+          position: absolute;
+          z-index: 10;
+          display: block;
+          $w: 1px;
+          background-color: #fff;
+
+          &.bottom {
+            width: 150px;
+            height: $w;
+            bottom: 0;
+            left: 0;
+            background-color: transparent;
+
+            &:before {
+              content: " ";
+              display: block;
+              width: 0;
+              height: $w;
+              position: absolute;
+              right: 50%;
+              background-color: #fff;
+            }
+
+            &:after {
+              content: " ";
+              display: block;
+              width: 0;
+              height: $w;
+              position: absolute;
+              right: 0;
+              bottom: 0;
+              background-color: #fff;
+            }
+          }
+
+          // &.bottom
+          &.left {
+            width: $w;
+            height: 0;
+            bottom: 0;
+            left: 0;
+          }
+
+          &.top {
+            width: 0;
+            height: $w;
+            top: 0;
+            left: 0;
+          }
+
+          &.right {
+            width: $w;
+            height: 0;
+            top: 0;
+            right: 0;
+          }
+        }
+
+        // span
+        &.active {
+          .bottom:before {
+            width: 50%;
+            transition: all 0.2s ease;
+          }
+
+          .bottom::after {
+            width: 50%;
+            transition: all 0.2s ease 0.7s;
+          }
+
+          .left {
+            height: 100%;
+            transition: all 0.2s ease 0.1s;
+          }
+
+          .top {
+            width: 100%;
+            transition: all 0.2s ease 0.3s;
+          }
+
+          .right {
+            height: 100%;
+            transition: all 0.2s ease 0.5s;
+          }
+        }
+
+        // &.active
+      }
+
+      // motion_tesla
+
+      .img {
+        float: left;
+        margin-right: 300px;
+        margin-top: 20px;
+        transform: translateX(60%);
+        width: 140px;
+        height: 190px;
+        background-color: #fff;
         @include url;
-        background-image: url("../img/mac.png");}
-      .product_text {position: absolute; bottom:-2%; width: 100%; height:auto; 
-        .site {float:left; margin-left:25px; width: 120px; height:auto;
-          p {font-size:0.8rem; margin-left:10px; width:100%; height: 20px; font-weight:bold;}
-        } // .site
-        .site_name {margin-left:150px; width: 380px; height:auto;
-          p {font-size: 0.8rem; margin-bottom:22px; width:100%; height:20px; font-weight:bold;}
-          a {display: block; font-size: 0.8rem;}
-        } // .site_name
-       } // .product_text
-      } // .pf_nivea
-     } // pfBox_02
-    } // #product_02
-    
-    
-    #footBox {width: 100%; height:300px; margin-top:40rem;
-      a {display: block; width: 100%; height: 100%; font-weight:bold; color:#fff;}
-    .loadBox {width:520px; height:auto; margin:auto;  color:#fff; text-align: center; line-height:50px;
-      div {position: relative; width: 100%; height: 100%; font-size: 0.8rem;
-        &:before {content:" "; position: absolute; right:0; display: block; width: 1px; height: 20px; 
-          background-color: #fff; transform: translateY(75%);}
-        &:nth-child(4) {&:before {display: none;}}
-        } // .div
-     .git {float:left;  width: 120px; height: 50px;}
-     .web {float:left; width: 120px; height: 50px;}
-     .site_map {float:left; width: 120px; height: 50px;}
-     .pdf {float:left; margin-left:20px; width: 120px; height: 50px;}
-     } // .loadBox
-    
-     .pf_info {width: 980px; height:auto; margin:auto;
-      p {font-size:0.8rem; text-align: center; line-height:1.6; margin-top:40px; color:#fff;}
-      }// pf.info
-     } // #footBox
-    
-    } // media screen
+        background-size: cover;
+        background-position: 50% 20%;
+        background-image: url("../img/chojaeyeong.png");
+        box-shadow: 0 3px 70px 5px #3c3c97;
+      }
+
+      .aboutme {
+        float: left;
+        width: 300px;
+        height: 430px;
+      }
+
+      .career {
+        float: left;
+        width: 400px;
+        height: 430px;
+      }
+
+      // career
+    }
+
+    // .profile
+  }
+
+  // #about
+
+  #about .profile.action {
+    margin-top: -5px;
+    transition: all 1.5s ease;
+    opacity: 1;
+  }
+
+
+  #skill {
+    width: 100%;
+    height: 800px;
+  }
+
+  .abtitle {
+    width: 100%;
+    height: 80px;
+    margin-bottom: 20px;
+
+    h2 {
+      margin: auto;
+      font-size: 2.5rem;
+      line-height: 1.5;
+      text-align: center;
+      color: #fff;
+    }
+
+    p {
+      font-size: 0.8rem;
+      color: #fff;
+      text-align: center;
+    }
+  }
+
+  // .abtitle
+  .abBox {
+    width: 1000px;
+    height: 340px;
+    margin: auto;
+    border: 2px solid #ccc;
+  }
+
+  .abProgram {
+    float: left;
+    width: 50%;
+    height: auto;
+    min-height: 500px;
+  }
+
+  .bar {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    color: #fff;
+
+    dl {
+      float: left;
+      width: 90%;
+      height: 60px;
+      transform: translateX(6%);
+      margin-top: 20px;
+
+      dt {
+        float: left;
+        font-weight: bold;
+        font-size: 0.8rem;
+        width: 100px;
+        height: 50px;
+        line-height: 13px;
+      }
+
+      dd {
+        float: left;
+        height: 20px;
+        margin-bottom: 10px;
+
+        &.narr {
+          width: 50%;
+          font-size: 0.8rem;
+          color: #fff;
+        }
+
+        &.gage {
+          width: 70%;
+          height: 20px;
+
+          >span {
+            float: left;
+            width: 80%;
+            height: 100%;
+            background-color: transparent;
+            border: 1px solid #fff;
+            border-radius: 2px;
+          }
+
+          i {
+            display: block;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.2);
+            border-right: 1px solid #fff;
+            transition: width 1000ms ease;
+          }
+
+          em {
+            float: right;
+            width: 50px;
+            height: 100%;
+            line-height: 20px;
+            font-style: normal;
+          }
+        }
+
+        // &.gage
+      }
+
+      // dd
+    }
+
+    // dl
+  }
+
+  // .bar
+  .abBox i {
+    width: 0;
+  }
+
+  .abBox.active .ps i {
+    width: 90%;
+  }
+
+  .abBox.active .ai i {
+    width: 90%;
+  }
+
+  .abBox.active .id i {
+    width: 70%;
+  }
+
+  .abBox.active .html i {
+    width: 90%;
+  }
+
+
+  .abBox i {
+    width: 0;
+  }
+
+  .abBox.active .css i {
+    width: 90%;
+  }
+
+  .abBox.active .scss i {
+    width: 90%;
+  }
+
+  .abBox.active .js i {
+    width: 80%;
+  }
+
+  .abBox.active .git i {
+    width: 70%;
+  }
+
+
+
+
+
+
+  #product_01 {
+    width: 100%;
+    height: auto;
+    margin-top: 14rem;
+
+    p {
+      display: block;
+      font-size: 0.9rem;
+      width: 100%;
+      height: 25px;
+      color: #fff;
+    }
+
+    .pfBox {
+      position: relative;
+      width: 100%;
+      height: auto;
+      margin: auto;
+      padding-left: 100px;
+      box-sizing: border-box;
+
+      a {
+        display: block;
+        font-size: 0.9rem;
+        margin-bottom: 20px;
+        width: 100%;
+        height: 20px;
+        font-weight: bold;
+        color: #fff;
+      }
+
+      span {
+        font-weight: bold;
+      }
+
+    }
+
+    .pf_dell {
+      position: relative;
+      float: left;
+      left: 7%;
+      width: 400px;
+      height: 450px;
+      border: 2px solid #fff;
+      border-radius: 3px;
+
+      .img_dell {
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: 33px;
+        margin: auto;
+        width: 240px;
+        height: 150px;
+        background-color: #333;
+        overflow: hidden;
+
+        img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 240px;
+          height: auto;
+          transition: top 2s ease;
+        }
+      }
+
+      // .img_dell
+      &:hover img {
+        top: -410px;
+      }
+
+      .moniter {
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: -100px;
+        margin: auto;
+        width: 250px;
+        height: 100%;
+        @include url;
+        background-image: url("../img/mac.png");
+      }
+
+      .product_text {
+        position: absolute;
+        bottom: -2%;
+        width: 100%;
+        height: auto;
+
+        .site {
+          float: left;
+          margin-left: 25px;
+          width: 120px;
+          height: auto;
+
+          p {
+            font-size: 0.8rem;
+            margin-left: 10px;
+            width: 100%;
+            height: 20px;
+            font-weight: bold;
+          }
+        }
+
+        // .site
+        .site_name {
+          margin-left: 150px;
+          width: 380px;
+          height: auto;
+
+          p {
+            font-size: 0.8rem;
+            margin-bottom: 22px;
+            width: 100%;
+            height: 20px;
+            font-weight: bold;
+          }
+
+          a {
+            display: block;
+            font-size: 0.8rem;
+          }
+        }
+
+        // .site_name
+      }
+
+      // .product_text
+    }
+
+    // .pf_dell
+
+    .pf_tesla {
+      position: relative;
+      margin: auto;
+      left: 17%;
+      width: 400px;
+      height: 450px;
+      border: 2px solid #fff;
+      border-radius: 3px;
+
+      .img_tesla {
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: 33px;
+        margin: auto;
+        width: 240px;
+        height: 150px;
+        background-color: #333;
+        overflow: hidden;
+
+        img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 240px;
+          height: auto;
+          transition: top 2s ease;
+        }
+      }
+
+      // .img_dell
+      &:hover img {
+        top: -715px;
+      }
+
+      .moniter {
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: -100px;
+        margin: auto;
+        width: 250px;
+        height: 100%;
+        @include url;
+        background-image: url("../img/mac.png");
+      }
+
+      .product_text {
+        position: absolute;
+        bottom: -2%;
+        width: 100%;
+        height: auto;
+
+        .site {
+          float: left;
+          margin-left: 25px;
+          width: 120px;
+          height: auto;
+
+          p {
+            font-size: 0.8rem;
+            margin-left: 10px;
+            width: 100%;
+            height: 20px;
+            font-weight: bold;
+          }
+        }
+
+        // .site
+        .site_name {
+          margin-left: 150px;
+          width: 380px;
+          height: auto;
+
+          p {
+            font-size: 0.8rem;
+            margin-bottom: 22px;
+            width: 100%;
+            height: 20px;
+            font-weight: bold;
+          }
+
+          a {
+            display: block;
+            font-size: 0.8rem;
+          }
+        }
+
+        // .site_name
+      }
+
+      // .product_text
+    }
+
+    // .pf_tesla
+  }
+
+  // #product_01
+
+
+  #product_02 {
+    position: relative;
+    width: 100%;
+    height: auto;
+
+    p {
+      display: block;
+      font-size: 0.9rem;
+      width: 100%;
+      height: 25px;
+      color: #fff;
+    }
+
+    .pfBox_02 {
+      position: absolute;
+      width: 100%;
+      height: auto;
+      margin: auto;
+      padding-left: 100px;
+      box-sizing: border-box;
+
+      a {
+        display: block;
+        font-size: 0.9rem;
+        margin-bottom: 20px;
+        width: 100%;
+        height: 20px;
+        font-weight: bold;
+        color: #fff;
+      }
+
+      span {
+        font-weight: bold;
+      }
+
+      .pf_nivea {
+        position: absolute;
+        left: 14%;
+        width: 400px;
+        height: 450px;
+        border: 2px solid #fff;
+        border-radius: 3px;
+
+        .img_nivea {
+          position: absolute;
+          right: 0;
+          left: 0;
+          top: 33px;
+          margin: auto;
+          width: 240px;
+          height: 150px;
+          background-color: #333;
+          overflow: hidden;
+
+          img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 240px;
+            height: auto;
+            transition: top 2s ease;
+          }
+        }
+
+        // .img_nivea
+        &:hover img {
+          top: -220px;
+        }
+
+        .moniter {
+          position: absolute;
+          right: 0;
+          left: 0;
+          top: -100px;
+          margin: auto;
+          width: 250px;
+          height: 100%;
+          @include url;
+          background-image: url("../img/mac.png");
+        }
+
+        .product_text {
+          position: absolute;
+          bottom: -2%;
+          width: 100%;
+          height: auto;
+
+          .site {
+            float: left;
+            margin-left: 25px;
+            width: 120px;
+            height: auto;
+
+            p {
+              font-size: 0.8rem;
+              margin-left: 10px;
+              width: 100%;
+              height: 20px;
+              font-weight: bold;
+            }
+          }
+
+          // .site
+          .site_name {
+            margin-left: 150px;
+            width: 380px;
+            height: auto;
+
+            p {
+              font-size: 0.8rem;
+              margin-bottom: 22px;
+              width: 100%;
+              height: 20px;
+              font-weight: bold;
+            }
+
+            a {
+              display: block;
+              font-size: 0.8rem;
+            }
+          }
+
+          // .site_name
+        }
+
+        // .product_text
+      }
+
+      // .pf_nivea
+    }
+
+    // pfBox_02
+  }
+
+  // #product_02
+
+
+  #footBox {
+    width: 100%;
+    height: 300px;
+    margin-top: 40rem;
+
+    a {
+      display: block;
+      width: 100%;
+      height: 100%;
+      font-weight: bold;
+      color: #fff;
+    }
+
+    .loadBox {
+      width: 520px;
+      height: auto;
+      margin: auto;
+      color: #fff;
+      text-align: center;
+      line-height: 50px;
+
+      div {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        font-size: 0.8rem;
+
+        &:before {
+          content: " ";
+          position: absolute;
+          right: 0;
+          display: block;
+          width: 1px;
+          height: 20px;
+          background-color: #fff;
+          transform: translateY(75%);
+        }
+
+        &:nth-child(4) {
+          &:before {
+            display: none;
+          }
+        }
+      }
+
+      // .div
+      .git {
+        float: left;
+        width: 120px;
+        height: 50px;
+      }
+
+      .web {
+        float: left;
+        width: 120px;
+        height: 50px;
+      }
+
+      .site_map {
+        float: left;
+        width: 120px;
+        height: 50px;
+      }
+
+      .pdf {
+        float: left;
+        margin-left: 20px;
+        width: 120px;
+        height: 50px;
+      }
+    }
+
+    // .loadBox
+
+    .pf_info {
+      width: 980px;
+      height: auto;
+      margin: auto;
+
+      p {
+        font-size: 0.8rem;
+        text-align: center;
+        line-height: 1.6;
+        margin-top: 40px;
+        color: #fff;
+      }
+    }
+
+    // pf.info
+  }
+
+  // #footBox
+
+}
+
+// media screen
